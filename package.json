@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "description": "mimetypes, mimeheads and mimenotes from shared-mime-info",
   "keywords": [
-    "pack",
-    "unpack",
-    "json",
-    "minify",
-    "circular",
-    "compress"
+    "mime",
+    "mimetype",
+    "extname"
   ],
   "license": "MIT",
   "homepage": "https://github.com/wareset/mime-info",

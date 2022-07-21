@@ -35,4 +35,4 @@ var a = (() => {
     return e ? "." + e : "";
 }, l = r => (r = o(r)) ? a[r][0] : r, v = r => (r = o(r)) ? a[r].slice(0) : [];
 
-export { a as EXTENSIONS, n as MIME_TYPES, o as ext, f as extname, l as mime, v as mimeList };
+export { a as EXTENSIONS, n as MIME_TYPES, o as ext, f as extname, v as mimeList, l as mimeType };

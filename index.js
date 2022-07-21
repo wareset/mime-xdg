@@ -35,4 +35,4 @@ exports.EXTENSIONS = t, exports.MIME_TYPES = E, exports.ext = M, exports.extname
         t > -1 && (r = e.slice(t + 1));
     }
     return r ? "." + r : "";
-}, exports.mime = e => (e = M(e)) ? t[e][0] : e, exports.mimeList = e => (e = M(e)) ? t[e].slice(0) : [];
+}, exports.mimeList = e => (e = M(e)) ? t[e].slice(0) : [], exports.mimeType = e => (e = M(e)) ? t[e][0] : e;

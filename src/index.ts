@@ -57,7 +57,7 @@ export const extname = (filepath: string): string => {
   return _ext ? '.' + _ext : ''
 }
 
-export const mime = (filepath: string): string =>
+export const mimeType = (filepath: string): string =>
   // @ts-ignore
   (filepath = ext(filepath)) ? EXTENSIONS[filepath][0] : filepath
 
