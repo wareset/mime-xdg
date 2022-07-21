@@ -1,7 +1,7 @@
 {
   "name": "mime-info",
   "version": "1.0.0",
-  "description": "Packing and unpacking of built-in objects while preserving instances",
+  "description": "mimetypes, mimeheads and mimenotes from shared-mime-info",
   "keywords": [
     "pack",
     "unpack",
