@@ -16,7 +16,7 @@ export declare const HEADS_DATA: readonly [{
     readonly 42: readonly [0, 745];
     readonly 51: readonly [0, 26];
     readonly 52: readonly [0, 26];
-    readonly 53: readonly [0, 51];
+    readonly 53: readonly [3, 0];
     readonly 54: readonly [0, 53];
     readonly 62: readonly [3, 3];
     readonly 63: readonly [3, 3];
@@ -302,10 +302,10 @@ export declare const HEADS_DATA: readonly [{
     readonly 90: readonly [0, 937];
     readonly 92: readonly [3, 3];
     readonly 93: readonly [3, 3];
-    readonly 118: readonly [7, 23];
-    readonly 119: readonly [2, 18];
-    readonly 120: readonly [2, 13];
+    readonly 119: readonly [7, 23];
+    readonly 120: readonly [2, 18];
     readonly 121: readonly [2, 13];
+    readonly 122: readonly [2, 13];
 }, {
     readonly 0: readonly [0, 26];
     readonly 1: readonly [3, 3];
@@ -693,10 +693,10 @@ export declare type TypeHeads = {
     "text/x-groovy": "text/x-csrc";
     "text/x-gradle": "text/x-groovy";
     "application/x-java-jnlp-file": "application/xml";
-    "application/javascript": "application/ecmascript";
-    "application/x-javascript": "application/ecmascript";
     "text/javascript": "application/ecmascript";
-    "application/json": "application/javascript";
+    "application/x-javascript": "application/ecmascript";
+    "application/javascript": "application/ecmascript";
+    "application/json": "text/javascript";
     "application/jrd+json": "application/json";
     "application/json-patch+json": "application/json";
     "application/ld+json": "application/json";

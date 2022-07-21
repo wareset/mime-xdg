@@ -149,8 +149,8 @@
   ],
   "js": [
     "application/javascript",
-    "application/x-javascript",
-    "text/javascript"
+    "text/javascript",
+    "application/x-javascript"
   ],
   "json": [
     "application/json",
@@ -4174,14 +4174,14 @@
     "application/x-java-pack200"
   ],
   "jsm": [
-    "application/javascript",
+    "text/javascript",
     "application/x-javascript",
-    "text/javascript"
+    "application/javascript"
   ],
   "mjs": [
-    "application/javascript",
+    "text/javascript",
     "application/x-javascript",
-    "text/javascript"
+    "application/javascript"
   ],
   "jrd": [
     "application/jrd+json"
@@ -4678,6 +4678,9 @@
   ],
   "it": [
     "audio/x-it"
+  ],
+  "tak": [
+    "audio/x-tak"
   ],
   "wv": [
     "audio/x-wavpack",
