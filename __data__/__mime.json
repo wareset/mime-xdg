@@ -147,11 +147,6 @@
     "application/x-java-vm",
     "application/octet-stream"
   ],
-  "js": [
-    "application/javascript",
-    "text/javascript",
-    "application/x-javascript"
-  ],
   "json": [
     "application/json",
     "application/schema+json"
@@ -3073,6 +3068,16 @@
     "text/html",
     "application/xhtml+xml"
   ],
+  "js": [
+    "text/javascript",
+    "application/x-javascript",
+    "application/javascript"
+  ],
+  "mjs": [
+    "text/javascript",
+    "application/x-javascript",
+    "application/javascript"
+  ],
   "n3": [
     "text/n3"
   ],
@@ -4174,11 +4179,6 @@
     "application/x-java-pack200"
   ],
   "jsm": [
-    "text/javascript",
-    "application/x-javascript",
-    "application/javascript"
-  ],
-  "mjs": [
     "text/javascript",
     "application/x-javascript",
     "application/javascript"
