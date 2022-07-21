@@ -2,7 +2,7 @@ setTimeout(() => {}, 1000 * 60 * 60 * 60)
 
 console.clear()
 
-console.log('@wareset/mimetypes')
+console.log('run')
 
 import * as nodePath from 'node:path'
 import * as nodeFs from 'node:fs'
