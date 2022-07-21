@@ -40,9 +40,6 @@ export declare const MIME_TYPES: {
     multipart: {
         [key: string]: true;
     };
-    "x-conference": {
-        [key: string]: true;
-    };
 };
 export declare const ext: (file: string) => keyof TypeExtnames | '';
 export declare const extname: (filepath: string) => string;

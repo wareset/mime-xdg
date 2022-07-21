@@ -188,7 +188,8 @@ const createMimeJson = async () => {
 
   await parseTypes(nodePath.resolve(DIR_RESOURE, 'apache.mime.types'), EXTS)
   await parseSharedMimeInfo(EXTS, NOTE, HEAD)
-  await parseTypes(nodePath.resolve(DIR_RESOURE, 'etc.mime.types'), EXTS)
+  // TODO: you need etc.mime.types? 
+  // await parseTypes(nodePath.resolve(DIR_RESOURE, 'etc.mime.types'), EXTS)
   // console.log(EXTS)
   await nodeFsPromises.writeFile(FILE_MIME_JSON, JSON.stringify(EXTS, null, 2))
   await nodeFsPromises.writeFile(FILE_CMNT_JSON, JSON.stringify(NOTE, null, 2))

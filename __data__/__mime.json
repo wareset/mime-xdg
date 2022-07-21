@@ -1,28 +1,4 @@
 {
-  "1": [
-    "application/x-troff-man"
-  ],
-  "2": [
-    "application/x-troff-man"
-  ],
-  "3": [
-    "application/x-troff-man"
-  ],
-  "4": [
-    "application/x-troff-man"
-  ],
-  "5": [
-    "application/x-troff-man"
-  ],
-  "6": [
-    "application/x-troff-man"
-  ],
-  "7": [
-    "application/x-troff-man"
-  ],
-  "8": [
-    "application/x-troff-man"
-  ],
   "123": [
     "application/vnd.lotus-1-2-3",
     "application/x-lotus123",
@@ -36,9 +12,6 @@
   ],
   "669": [
     "audio/x-mod"
-  ],
-  "726": [
-    "audio/32kadpcm"
   ],
   "ez": [
     "application/andrew-inset"
@@ -144,8 +117,7 @@
     "application/java",
     "application/java-byte-code",
     "application/x-java-class",
-    "application/x-java-vm",
-    "application/octet-stream"
+    "application/x-java-vm"
   ],
   "json": [
     "application/json",
@@ -230,8 +202,7 @@
     "application/octet-stream"
   ],
   "dms": [
-    "application/octet-stream",
-    "text/vnd.DMClientScript"
+    "application/octet-stream"
   ],
   "lrf": [
     "application/octet-stream"
@@ -244,17 +215,14 @@
     "application/x-sharedlib"
   ],
   "dist": [
-    "application/octet-stream",
-    "application/vnd.apple.installer+xml"
+    "application/octet-stream"
   ],
   "distz": [
-    "application/octet-stream",
-    "application/vnd.apple.installer+xml"
+    "application/octet-stream"
   ],
   "pkg": [
     "application/octet-stream",
-    "application/x-xar",
-    "application/vnd.apple.installer+xml"
+    "application/x-xar"
   ],
   "bpk": [
     "application/octet-stream"
@@ -269,8 +237,7 @@
     "application/octet-stream"
   ],
   "oda": [
-    "application/oda",
-    "application/ODA"
+    "application/oda"
   ],
   "opf": [
     "application/oebps-package+xml"
@@ -298,8 +265,7 @@
     "application/oxps"
   ],
   "xer": [
-    "application/patch-ops-error+xml",
-    "application/xcap-error+xml"
+    "application/patch-ops-error+xml"
   ],
   "pdf": [
     "application/pdf",
@@ -343,8 +309,7 @@
     "application/pkcs8"
   ],
   "ac": [
-    "application/pkix-attr-cert",
-    "application/vnd.nokia.n-gage.ac+xml"
+    "application/pkix-attr-cert"
   ],
   "cer": [
     "application/pkix-cert"
@@ -509,8 +474,7 @@
     "application/vnd.3gpp2.tcap"
   ],
   "pwn": [
-    "application/vnd.3m.post-it-notes",
-    "application/vnd.3M.Post-it-Notes"
+    "application/vnd.3m.post-it-notes"
   ],
   "aso": [
     "application/vnd.accpac.simply.aso"
@@ -573,8 +537,7 @@
     "application/vnd.anser-web-funds-transfer-initiation"
   ],
   "atx": [
-    "application/vnd.antix.game-component",
-    "audio/ATRAC-X"
+    "application/vnd.antix.game-component"
   ],
   "mpkg": [
     "application/vnd.apple.installer+xml"
@@ -725,8 +688,7 @@
     "application/vnd.dna"
   ],
   "mlp": [
-    "application/vnd.dolby.mlp",
-    "audio/vnd.dolby.mlp"
+    "application/vnd.dolby.mlp"
   ],
   "dpg": [
     "application/vnd.dpgraph"
@@ -792,8 +754,7 @@
     "application/vnd.fdsn.seed"
   ],
   "gph": [
-    "application/vnd.flographit",
-    "application/vnd.FloGraphIt"
+    "application/vnd.flographit"
   ],
   "ftc": [
     "application/vnd.fluxtime.clip"
@@ -911,8 +872,7 @@
     "application/vnd.hal+xml"
   ],
   "zmm": [
-    "application/vnd.handheld-entertainment+xml",
-    "application/vnd.HandHeld-Entertainment+xml"
+    "application/vnd.handheld-entertainment+xml"
   ],
   "hbci": [
     "application/vnd.hbci"
@@ -921,8 +881,7 @@
     "application/vnd.hhe.lesson-player"
   ],
   "hpgl": [
-    "application/vnd.hp-hpgl",
-    "application/vnd.hp-HPGL"
+    "application/vnd.hp-hpgl"
   ],
   "hpid": [
     "application/vnd.hp-hpid"
@@ -934,8 +893,7 @@
     "application/vnd.hp-jlyt"
   ],
   "pcl": [
-    "application/vnd.hp-pcl",
-    "application/vnd.hp-PCL"
+    "application/vnd.hp-pcl"
   ],
   "pclxl": [
     "application/vnd.hp-pclxl"
@@ -944,20 +902,16 @@
     "application/vnd.hydrostatix.sof-data"
   ],
   "mpy": [
-    "application/vnd.ibm.minipay",
-    "application/vnd.ibm.MiniPay"
+    "application/vnd.ibm.minipay"
   ],
   "afp": [
-    "application/vnd.ibm.modcap",
-    "application/vnd.afpc.modca"
+    "application/vnd.ibm.modcap"
   ],
   "listafp": [
-    "application/vnd.ibm.modcap",
-    "application/vnd.afpc.modca"
+    "application/vnd.ibm.modcap"
   ],
   "list3820": [
-    "application/vnd.ibm.modcap",
-    "application/vnd.afpc.modca"
+    "application/vnd.ibm.modcap"
   ],
   "irm": [
     "application/vnd.ibm.rights-management"
@@ -1078,12 +1032,10 @@
     "application/vnd.kidspiration"
   ],
   "kne": [
-    "application/vnd.kinar",
-    "application/vnd.Kinar"
+    "application/vnd.kinar"
   ],
   "knp": [
-    "application/vnd.kinar",
-    "application/vnd.Kinar"
+    "application/vnd.kinar"
   ],
   "skp": [
     "application/vnd.koan"
@@ -1142,8 +1094,7 @@
     "application/vnd.mediastation.cdkey"
   ],
   "mwf": [
-    "application/vnd.mfer",
-    "application/vnd.MFER"
+    "application/vnd.mfer"
   ],
   "mfm": [
     "application/vnd.mfmp"
@@ -1159,32 +1110,25 @@
     "application/x-mif"
   ],
   "daf": [
-    "application/vnd.mobius.daf",
-    "application/vnd.Mobius.DAF"
+    "application/vnd.mobius.daf"
   ],
   "dis": [
-    "application/vnd.mobius.dis",
-    "application/vnd.Mobius.DIS"
+    "application/vnd.mobius.dis"
   ],
   "mbk": [
-    "application/vnd.mobius.mbk",
-    "application/vnd.Mobius.MBK"
+    "application/vnd.mobius.mbk"
   ],
   "mqy": [
-    "application/vnd.mobius.mqy",
-    "application/vnd.Mobius.MQY"
+    "application/vnd.mobius.mqy"
   ],
   "msl": [
-    "application/vnd.mobius.msl",
-    "application/vnd.Mobius.MSL"
+    "application/vnd.mobius.msl"
   ],
   "plc": [
-    "application/vnd.mobius.plc",
-    "application/vnd.Mobius.PLC"
+    "application/vnd.mobius.plc"
   ],
   "txf": [
-    "application/vnd.mobius.txf",
-    "application/vnd.Mobius.TXF"
+    "application/vnd.mobius.txf"
   ],
   "mpn": [
     "application/vnd.mophun.application"
@@ -1376,8 +1320,7 @@
     "application/vnd.neurolanguage.nlu"
   ],
   "ntf": [
-    "application/vnd.nitf",
-    "application/vnd.lotus-notes"
+    "application/vnd.nitf"
   ],
   "nitf": [
     "application/vnd.nitf"
@@ -1404,16 +1347,13 @@
     "application/vnd.nokia.radio-presets"
   ],
   "edm": [
-    "application/vnd.novadigm.edm",
-    "application/vnd.novadigm.EDM"
+    "application/vnd.novadigm.edm"
   ],
   "edx": [
-    "application/vnd.novadigm.edx",
-    "application/vnd.novadigm.EDX"
+    "application/vnd.novadigm.edx"
   ],
   "ext": [
-    "application/vnd.novadigm.ext",
-    "application/vnd.novadigm.EXT"
+    "application/vnd.novadigm.ext"
   ],
   "odc": [
     "application/vnd.oasis.opendocument.chart"
@@ -1557,28 +1497,22 @@
     "application/vnd.pvi.ptid1"
   ],
   "qxd": [
-    "application/vnd.quark.quarkxpress",
-    "application/vnd.Quark.QuarkXPress"
+    "application/vnd.quark.quarkxpress"
   ],
   "qxt": [
-    "application/vnd.quark.quarkxpress",
-    "application/vnd.Quark.QuarkXPress"
+    "application/vnd.quark.quarkxpress"
   ],
   "qwd": [
-    "application/vnd.quark.quarkxpress",
-    "application/vnd.Quark.QuarkXPress"
+    "application/vnd.quark.quarkxpress"
   ],
   "qwt": [
-    "application/vnd.quark.quarkxpress",
-    "application/vnd.Quark.QuarkXPress"
+    "application/vnd.quark.quarkxpress"
   ],
   "qxl": [
-    "application/vnd.quark.quarkxpress",
-    "application/vnd.Quark.QuarkXPress"
+    "application/vnd.quark.quarkxpress"
   ],
   "qxb": [
-    "application/vnd.quark.quarkxpress",
-    "application/vnd.Quark.QuarkXPress"
+    "application/vnd.quark.quarkxpress"
   ],
   "bed": [
     "application/vnd.realvnc.bed"
@@ -1597,8 +1531,7 @@
   ],
   "rm": [
     "application/vnd.rn-realmedia",
-    "application/vnd.rn-realmedia-vbr",
-    "audio/x-pn-realaudio"
+    "application/vnd.rn-realmedia-vbr"
   ],
   "rmvb": [
     "application/vnd.rn-realmedia-vbr",
@@ -1635,12 +1568,10 @@
     "application/vnd.shana.informed.package"
   ],
   "twd": [
-    "application/vnd.simtech-mindmapper",
-    "application/vnd.SimTech-MindMapper"
+    "application/vnd.simtech-mindmapper"
   ],
   "twds": [
-    "application/vnd.simtech-mindmapper",
-    "application/vnd.SimTech-MindMapper"
+    "application/vnd.simtech-mindmapper"
   ],
   "mmf": [
     "application/vnd.smaf",
@@ -2029,8 +1960,7 @@
     "application/x-director"
   ],
   "cst": [
-    "application/x-director",
-    "application/vnd.commonspace"
+    "application/x-director"
   ],
   "cct": [
     "application/x-director"
@@ -2146,8 +2076,7 @@
     "application/x-wia",
     "application/x-gamecube-rom",
     "application/x-gamecube-iso-image",
-    "application/x-cd-image",
-    "application/octet-stream"
+    "application/x-cd-image"
   ],
   "jnlp": [
     "application/x-java-jnlp-file"
@@ -2159,13 +2088,11 @@
   ],
   "lzh": [
     "application/x-lzh-compressed",
-    "application/x-lha",
-    "application/octet-stream"
+    "application/x-lha"
   ],
   "lha": [
     "application/x-lzh-compressed",
-    "application/x-lha",
-    "application/octet-stream"
+    "application/x-lha"
   ],
   "mie": [
     "application/x-mie"
@@ -2214,12 +2141,10 @@
   ],
   "exe": [
     "application/x-msdownload",
-    "application/x-ms-dos-executable",
-    "application/octet-stream"
+    "application/x-ms-dos-executable"
   ],
   "dll": [
-    "application/x-msdownload",
-    "application/octet-stream"
+    "application/x-msdownload"
   ],
   "com": [
     "application/x-msdownload"
@@ -2263,12 +2188,10 @@
   ],
   "pub": [
     "application/x-mspublisher",
-    "application/vnd.ms-publisher",
-    "application/vnd.exstream-package"
+    "application/vnd.ms-publisher"
   ],
   "scd": [
-    "application/x-msschedule",
-    "application/vnd.scribus"
+    "application/x-msschedule"
   ],
   "trm": [
     "application/x-msterminal"
@@ -2699,8 +2622,7 @@
   "ra": [
     "audio/x-pn-realaudio",
     "audio/vnd.rn-realaudio",
-    "audio/vnd.m-realaudio",
-    "audio/x-realaudio"
+    "audio/vnd.m-realaudio"
   ],
   "rmp": [
     "audio/x-pn-realaudio-plugin"
@@ -2718,15 +2640,13 @@
     "chemical/x-cdx"
   ],
   "cif": [
-    "chemical/x-cif",
-    "application/vnd.multiad.creator.cif"
+    "chemical/x-cif"
   ],
   "cmdf": [
     "chemical/x-cmdf"
   ],
   "cml": [
-    "chemical/x-cml",
-    "application/cellml+xml"
+    "chemical/x-cml"
   ],
   "csml": [
     "chemical/x-csml"
@@ -2763,8 +2683,7 @@
   ],
   "g3": [
     "image/g3fax",
-    "image/fax-g3",
-    "application/vnd.geocube+xml"
+    "image/fax-g3"
   ],
   "gif": [
     "image/gif"
@@ -2795,8 +2714,7 @@
   ],
   "sgi": [
     "image/sgi",
-    "image/x-sgi",
-    "image/vnd.sealedmedia.softseal.gif"
+    "image/x-sgi"
   ],
   "svg": [
     "image/svg+xml"
@@ -3020,23 +2938,19 @@
     "model/vrml"
   ],
   "x3db": [
-    "model/x3d+binary",
-    "model/x3d+xml"
+    "model/x3d+binary"
   ],
   "x3dbz": [
     "model/x3d+binary"
   ],
   "x3dv": [
-    "model/x3d+vrml",
-    "model/x3d-vrml"
+    "model/x3d+vrml"
   ],
   "x3dvz": [
-    "model/x3d+vrml",
-    "model/x3d-vrml"
+    "model/x3d+vrml"
   ],
   "x3d": [
-    "model/x3d+xml",
-    "application/vnd.hzn-3d-crossword"
+    "model/x3d+xml"
   ],
   "x3dz": [
     "model/x3d+xml"
@@ -3110,12 +3024,10 @@
     "text/richtext"
   ],
   "sgml": [
-    "text/sgml",
-    "text/SGML"
+    "text/sgml"
   ],
   "sgm": [
-    "text/sgml",
-    "text/SGML"
+    "text/sgml"
   ],
   "tsv": [
     "text/tab-separated-values"
@@ -3143,13 +3055,11 @@
   ],
   "me": [
     "text/troff",
-    "text/x-troff-me",
-    "application/x-troff-me"
+    "text/x-troff-me"
   ],
   "ms": [
     "text/troff",
-    "text/x-troff-ms",
-    "application/x-troff-ms"
+    "text/x-troff-ms"
   ],
   "ttl": [
     "text/turtle"
@@ -3169,8 +3079,7 @@
     "text/x-vcard"
   ],
   "curl": [
-    "text/vnd.curl",
-    "application/vnd.curl"
+    "text/vnd.curl"
   ],
   "dcurl": [
     "text/vnd.curl.dcurl"
@@ -3213,18 +3122,15 @@
   ],
   "c": [
     "text/x-c",
-    "text/x-csrc",
-    "text/plain"
+    "text/x-csrc"
   ],
   "cc": [
     "text/x-c",
-    "text/x-c++src",
-    "text/plain"
+    "text/x-c++src"
   ],
   "cxx": [
     "text/x-c",
-    "text/x-c++src",
-    "text/plain"
+    "text/x-c++src"
   ],
   "cpp": [
     "text/x-c",
@@ -3232,13 +3138,11 @@
   ],
   "h": [
     "text/x-c",
-    "text/x-chdr",
-    "text/plain"
+    "text/x-chdr"
   ],
   "hh": [
     "text/x-c",
-    "text/x-c++hdr",
-    "text/plain"
+    "text/x-c++hdr"
   ],
   "dic": [
     "text/x-c"
@@ -3253,8 +3157,7 @@
     "text/x-fortran"
   ],
   "f90": [
-    "text/x-fortran",
-    "text/plain"
+    "text/x-fortran"
   ],
   "java": [
     "text/x-java-source",
@@ -3429,12 +3332,10 @@
     "video/vnd.ms-playready.media.pyv"
   ],
   "uvu": [
-    "video/vnd.uvvu.mp4",
-    "video/vnd.dece.mp4"
+    "video/vnd.uvvu.mp4"
   ],
   "uvvu": [
-    "video/vnd.uvvu.mp4",
-    "video/vnd.dece.mp4"
+    "video/vnd.uvvu.mp4"
   ],
   "viv": [
     "video/vnd.vivo",
@@ -3532,8 +3433,7 @@
     "video/x-sgi-movie"
   ],
   "smv": [
-    "video/x-smv",
-    "audio/SMV"
+    "video/x-smv"
   ],
   "a26": [
     "application/x-atari-2600-rom"
@@ -3576,8 +3476,7 @@
     "audio/x-amzxml"
   ],
   "gsm": [
-    "audio/x-gsm",
-    "model/vnd.gdl"
+    "audio/x-gsm"
   ],
   "pla": [
     "audio/x-iriver-pla"
@@ -3834,8 +3733,7 @@
     "application/x-cue"
   ],
   "sam": [
-    "application/x-amipro",
-    "application/vnd.lotus-wordpro"
+    "application/x-amipro"
   ],
   "pdc": [
     "application/x-aportisdoc"
@@ -3844,8 +3742,7 @@
     "application/x-applix-spreadsheet"
   ],
   "a": [
-    "application/x-archive",
-    "text/vnd.a"
+    "application/x-archive"
   ],
   "ar": [
     "application/x-archive"
@@ -3908,8 +3805,7 @@
     "application/x-raw-disk-image"
   ],
   "img": [
-    "application/x-raw-disk-image",
-    "application/octet-stream"
+    "application/x-raw-disk-image"
   ],
   "fd": [
     "application/x-raw-floppy-disk-image",
@@ -3952,8 +3848,7 @@
     "application/x-compressed-tar"
   ],
   "tgz": [
-    "application/x-compressed-tar",
-    "application/gzip"
+    "application/x-compressed-tar"
   ],
   "cpio.gz": [
     "application/x-cpio-compressed"
@@ -3962,8 +3857,7 @@
     "application/x-dbf",
     "application/x-dbase",
     "application/dbf",
-    "application/dbase",
-    "application/vnd.dbf"
+    "application/dbase"
   ],
   "es": [
     "application/ecmascript",
@@ -3973,8 +3867,7 @@
     "application/x-mame-chd"
   ],
   "nds": [
-    "application/x-nintendo-ds-rom",
-    "application/vnd.nintendo.nitro.rom"
+    "application/x-nintendo-ds-rom"
   ],
   "cci": [
     "application/x-nintendo-3ds-rom"
@@ -4055,8 +3948,7 @@
     "application/x-font-pcf"
   ],
   "spd": [
-    "application/x-font-speedo",
-    "application/vnd.sealedmedia.softseal.pdf"
+    "application/x-font-speedo"
   ],
   "ttx": [
     "application/x-font-ttx"
@@ -4148,8 +4040,7 @@
     "application/x-hdf"
   ],
   "h5": [
-    "application/x-hdf",
-    "application/mipc"
+    "application/x-hdf"
   ],
   "groovy": [
     "text/x-groovy"
@@ -4375,8 +4266,7 @@
   "pm": [
     "application/x-pagemaker",
     "application/x-perl",
-    "text/x-perl",
-    "text/plain"
+    "text/x-perl"
   ],
   "al": [
     "application/x-perl",
@@ -4388,8 +4278,7 @@
   ],
   "pod": [
     "application/x-perl",
-    "text/x-perl",
-    "text/x-pod"
+    "text/x-perl"
   ],
   "php": [
     "application/x-php"
@@ -4419,8 +4308,7 @@
     "application/x-python-bytecode"
   ],
   "pyo": [
-    "application/x-python-bytecode",
-    "model/vnd.pytha.pyox"
+    "application/x-python-bytecode"
   ],
   "qti": [
     "application/x-qtiplot"
@@ -4495,8 +4383,7 @@
     "application/x-sg1000-rom"
   ],
   "sms": [
-    "application/x-sms-rom",
-    "application/vnd.3gpp2.sms"
+    "application/x-sms-rom"
   ],
   "gg": [
     "application/x-gamegear-rom"
@@ -4614,15 +4501,13 @@
     "application/x-wonderswan-rom"
   ],
   "wsc": [
-    "application/x-wonderswan-color-rom",
-    "application/vnd.wfa.wsc"
+    "application/x-wonderswan-color-rom"
   ],
   "cert": [
     "application/x-x509-ca-cert"
   ],
   "pem": [
-    "application/x-x509-ca-cert",
-    "application/pem-certificate-chain"
+    "application/x-x509-ca-cert"
   ],
   "zoo": [
     "application/x-zoo"
@@ -4683,8 +4568,7 @@
     "audio/x-tak"
   ],
   "wv": [
-    "audio/x-wavpack",
-    "application/vnd.wv.csp+wbxml"
+    "audio/x-wavpack"
   ],
   "wvp": [
     "audio/x-wavpack"
@@ -4851,8 +4735,7 @@
     "image/heif",
     "image/heic",
     "image/heic-sequence",
-    "image/heif-sequence",
-    "image/avif"
+    "image/heif-sequence"
   ],
   "mjpeg": [
     "video/x-mjpeg"
@@ -4894,8 +4777,7 @@
     "image/x-dds"
   ],
   "exr": [
-    "image/x-exr",
-    "image/aces"
+    "image/x-exr"
   ],
   "pict": [
     "image/x-pict"
@@ -5162,8 +5044,7 @@
     "text/rdf"
   ],
   "rst": [
-    "text/x-rst",
-    "text/prs.fallenstein.rst"
+    "text/x-rst"
   ],
   "owx": [
     "application/owl+xml"
@@ -5196,8 +5077,7 @@
     "text/x-c++hdr"
   ],
   "hxx": [
-    "text/x-c++hdr",
-    "text/plain"
+    "text/x-c++hdr"
   ],
   "C": [
     "text/x-c++src"
@@ -5254,8 +5134,7 @@
     "text/x-eiffel"
   ],
   "el": [
-    "text/x-emacs-lisp",
-    "text/plain"
+    "text/x-emacs-lisp"
   ],
   "ex": [
     "text/x-elixir"
@@ -5338,8 +5217,7 @@
   "m": [
     "text/x-objcsrc",
     "text/x-matlab",
-    "text/x-octave",
-    "application/vnd.wolfram.mathematica.package"
+    "text/x-octave"
   ],
   "mm": [
     "text/x-objc++src",
@@ -5352,8 +5230,7 @@
     "text/x-ocaml"
   ],
   "cl": [
-    "text/x-opencl-src",
-    "application/simple-filter+xml"
+    "text/x-opencl-src"
   ],
   "diff": [
     "text/x-patch",
@@ -5448,8 +5325,7 @@
     "text/x-xmi"
   ],
   "fo": [
-    "text/x-xslfo",
-    "application/vnd.software602.filler.form+xml"
+    "text/x-xslfo"
   ],
   "xslfo": [
     "text/x-xslfo"
@@ -5595,8 +5471,7 @@
     "application/vnd.geo+json"
   ],
   "ica": [
-    "application/x-ica",
-    "application/vnd.commerce-battelle"
+    "application/x-ica"
   ],
   "it87": [
     "application/x-it87"
@@ -5739,1298 +5614,5 @@
   ],
   "qs": [
     "application/sparql-query"
-  ],
-  "a2l": [
-    "application/A2L"
-  ],
-  "aml": [
-    "application/AML"
-  ],
-  "atf": [
-    "application/ATF"
-  ],
-  "atfx": [
-    "application/ATFX"
-  ],
-  "atxml": [
-    "application/ATXML"
-  ],
-  "atomdeleted": [
-    "application/atomdeleted+xml"
-  ],
-  "dwd": [
-    "application/atsc-dwd+xml"
-  ],
-  "held": [
-    "application/atsc-held+xml"
-  ],
-  "rsat": [
-    "application/atsc-rsat+xml"
-  ],
-  "apxml": [
-    "application/auth-policy+xml"
-  ],
-  "xdd": [
-    "application/bacnet-xdd+zip"
-  ],
-  "xcs": [
-    "application/calendar+xml"
-  ],
-  "cbor": [
-    "application/cbor"
-  ],
-  "c3ex": [
-    "application/cccex"
-  ],
-  "ccmp": [
-    "application/ccmp+xml"
-  ],
-  "cdfx": [
-    "application/CDFX+XML"
-  ],
-  "cea": [
-    "application/CEA"
-  ],
-  "cellml": [
-    "application/cellml+xml"
-  ],
-  "1clr": [
-    "application/clr"
-  ],
-  "clue": [
-    "application/clue_info+xml"
-  ],
-  "cmsc": [
-    "application/cms"
-  ],
-  "cpl": [
-    "application/cpl+xml"
-  ],
-  "csrattrs": [
-    "application/csrattrs"
-  ],
-  "mpd": [
-    "application/dash+xml"
-  ],
-  "mpdd": [
-    "application/dashdelta"
-  ],
-  "dcd": [
-    "application/DCD"
-  ],
-  "dii": [
-    "application/DII"
-  ],
-  "dit": [
-    "application/DIT"
-  ],
-  "xmls": [
-    "application/dskpp+xml"
-  ],
-  "dvc": [
-    "application/dvcs"
-  ],
-  "efi": [
-    "application/efi"
-  ],
-  "emotionml": [
-    "application/emotionml+xml"
-  ],
-  "finf": [
-    "application/fastinfoset"
-  ],
-  "fdt": [
-    "application/fdt+xml"
-  ],
-  "gpkg": [
-    "application/geopackage+sqlite3"
-  ],
-  "glbin": [
-    "application/gltf-buffer"
-  ],
-  "glbuf": [
-    "application/gltf-buffer"
-  ],
-  "its": [
-    "application/its+xml"
-  ],
-  "lgr": [
-    "application/lgr+xml"
-  ],
-  "wlnk": [
-    "application/link-format"
-  ],
-  "lostsyncxml": [
-    "application/lostsync+xml"
-  ],
-  "lpf": [
-    "application/lpf+zip"
-  ],
-  "lxf": [
-    "application/LXF"
-  ],
-  "mf4": [
-    "application/MF4"
-  ],
-  "maei": [
-    "application/mmt-aei+xml"
-  ],
-  "musd": [
-    "application/mmt-usd+xml"
-  ],
-  "nq": [
-    "application/n-quads"
-  ],
-  "nt": [
-    "application/n-triples"
-  ],
-  "orq": [
-    "application/ocsp-request"
-  ],
-  "ors": [
-    "application/ocsp-response"
-  ],
-  "odx": [
-    "application/ODX"
-  ],
-  "relo": [
-    "application/p2p-overlay+xml"
-  ],
-  "pdx": [
-    "application/PDX"
-  ],
-  "provx": [
-    "application/provenance+xml"
-  ],
-  "cw": [
-    "application/prs.cww"
-  ],
-  "hpub": [
-    "application/prs.hpub+zip"
-  ],
-  "rnd": [
-    "application/prs.nprend"
-  ],
-  "rct": [
-    "application/prs.nprend"
-  ],
-  "rdf-crypt": [
-    "application/prs.rdf-xml-crypt"
-  ],
-  "xsf": [
-    "application/prs.xsf+xml"
-  ],
-  "rapd": [
-    "application/route-apd+xml"
-  ],
-  "sls": [
-    "application/route-s-tsid+xml"
-  ],
-  "rusd": [
-    "application/route-usd+xml"
-  ],
-  "rfcxml": [
-    "application/rfc+xml"
-  ],
-  "sarif-external-properties": [
-    "application/sarif-external-properties+json"
-  ],
-  "sarif-external-properties.json": [
-    "application/sarif-external-properties+json"
-  ],
-  "sarif": [
-    "application/sarif+json"
-  ],
-  "sarif.json": [
-    "application/sarif+json"
-  ],
-  "scim": [
-    "application/scim+json"
-  ],
-  "senml-etchc": [
-    "application/senml-etch+cbor"
-  ],
-  "senml-etchj": [
-    "application/senml-etch+json"
-  ],
-  "senmlc": [
-    "application/senml+cbor"
-  ],
-  "senml": [
-    "application/senml+json"
-  ],
-  "senmlx": [
-    "application/senml+xml"
-  ],
-  "senmle": [
-    "application/senml-exi"
-  ],
-  "sensmlc": [
-    "application/sensml+cbor"
-  ],
-  "sensml": [
-    "application/sensml+json"
-  ],
-  "sensmlx": [
-    "application/sensml+xml"
-  ],
-  "sensmle": [
-    "application/sensml-exi"
-  ],
-  "soc": [
-    "application/sgml-open-catalog"
-  ],
-  "sieve": [
-    "application/sieve"
-  ],
-  "stix": [
-    "application/stix+json"
-  ],
-  "swidtag": [
-    "application/swid+xml"
-  ],
-  "tau": [
-    "application/tamp-apex-update"
-  ],
-  "auc": [
-    "application/tamp-apex-update-confirm"
-  ],
-  "tcu": [
-    "application/tamp-community-update"
-  ],
-  "cuc": [
-    "application/tamp-community-update-confirm"
-  ],
-  "jsontd": [
-    "application/td+json"
-  ],
-  "ter": [
-    "application/tamp-error"
-  ],
-  "tsa": [
-    "application/tamp-sequence-adjust"
-  ],
-  "sac": [
-    "application/tamp-sequence-adjust-confirm"
-  ],
-  "tur": [
-    "application/tamp-update"
-  ],
-  "tuc": [
-    "application/tamp-update-confirm"
-  ],
-  "teiCorpus": [
-    "application/tei+xml"
-  ],
-  "odd": [
-    "application/tei+xml"
-  ],
-  "tsq": [
-    "application/timestamp-query"
-  ],
-  "tsr": [
-    "application/timestamp-reply"
-  ],
-  "ttml": [
-    "application/ttml+xml"
-  ],
-  "gsheet": [
-    "application/urc-grpsheet+xml"
-  ],
-  "rsheet": [
-    "application/urc-ressheet+xml"
-  ],
-  "td": [
-    "application/urc-targetdesc+xml"
-  ],
-  "uis": [
-    "application/urc-uisocketdesc+xml"
-  ],
-  "1km": [
-    "application/vnd.1000minds.decision-model+xml"
-  ],
-  "imgcal": [
-    "application/vnd.3lightssoftware.imagescal"
-  ],
-  "pseg3820": [
-    "application/vnd.afpc.modca"
-  ],
-  "ovl": [
-    "application/vnd.afpc.modca-overlay"
-  ],
-  "psg": [
-    "application/vnd.afpc.modca-pagesegment"
-  ],
-  "ota": [
-    "application/vnd.android.ota"
-  ],
-  "apkg": [
-    "application/vnd.anki"
-  ],
-  "keynote": [
-    "application/vnd.apple.keynote"
-  ],
-  "artisan": [
-    "application/vnd.artisan+json"
-  ],
-  "package": [
-    "application/vnd.autopackage"
-  ],
-  "bmml": [
-    "application/vnd.balsamiq.bmml+xml"
-  ],
-  "ac2": [
-    "application/vnd.banana-accounting"
-  ],
-  "bmpr": [
-    "application/vnd.balsamiq.bmpr"
-  ],
-  "ep": [
-    "application/vnd.bluetooth.ep.oob"
-  ],
-  "le": [
-    "application/vnd.bluetooth.le.oob"
-  ],
-  "tlclient": [
-    "application/vnd.cendio.thinlinc.clientconf"
-  ],
-  "csl": [
-    "application/vnd.citationstyles.style+xml"
-  ],
-  "xodt": [
-    "application/vnd.collabio.xodocuments.document"
-  ],
-  "xott": [
-    "application/vnd.collabio.xodocuments.document-template"
-  ],
-  "xodp": [
-    "application/vnd.collabio.xodocuments.presentation"
-  ],
-  "xotp": [
-    "application/vnd.collabio.xodocuments.presentation-template"
-  ],
-  "xods": [
-    "application/vnd.collabio.xodocuments.spreadsheet"
-  ],
-  "xots": [
-    "application/vnd.collabio.xodocuments.spreadsheet-template"
-  ],
-  "icf": [
-    "application/vnd.commerce-battelle"
-  ],
-  "icd": [
-    "application/vnd.commerce-battelle"
-  ],
-  "ic0": [
-    "application/vnd.commerce-battelle"
-  ],
-  "ic1": [
-    "application/vnd.commerce-battelle"
-  ],
-  "ic2": [
-    "application/vnd.commerce-battelle"
-  ],
-  "ic3": [
-    "application/vnd.commerce-battelle"
-  ],
-  "ic4": [
-    "application/vnd.commerce-battelle"
-  ],
-  "ic5": [
-    "application/vnd.commerce-battelle"
-  ],
-  "ic6": [
-    "application/vnd.commerce-battelle"
-  ],
-  "ic7": [
-    "application/vnd.commerce-battelle"
-  ],
-  "ic8": [
-    "application/vnd.commerce-battelle"
-  ],
-  "ign": [
-    "application/vnd.coreos.ignition+json"
-  ],
-  "ignition": [
-    "application/vnd.coreos.ignition+json"
-  ],
-  "ssvc": [
-    "application/vnd.crypto-shade-file"
-  ],
-  "c9r": [
-    "application/vnd.cryptomator.encrypted"
-  ],
-  "c9s": [
-    "application/vnd.cryptomator.encrypted"
-  ],
-  "cryptomator": [
-    "application/vnd.cryptomator.vault"
-  ],
-  "dsm": [
-    "application/vnd.desmume.movie"
-  ],
-  "docjson": [
-    "application/vnd.document+json"
-  ],
-  "scld": [
-    "application/vnd.doremir.scorecloud-binary-document"
-  ],
-  "mwc": [
-    "application/vnd.dpgraph"
-  ],
-  "dpgraph": [
-    "application/vnd.dpgraph"
-  ],
-  "fla": [
-    "application/vnd.dtg.local.flash"
-  ],
-  "dzr": [
-    "application/vnd.dzr"
-  ],
-  "qcall": [
-    "application/vnd.ericsson.quickcall"
-  ],
-  "qca": [
-    "application/vnd.ericsson.quickcall"
-  ],
-  "espass": [
-    "application/vnd.espass-espass+zip"
-  ],
-  "asice": [
-    "application/vnd.etsi.asic-e+zip"
-  ],
-  "sce": [
-    "application/vnd.etsi.asic-e+zip"
-  ],
-  "asics": [
-    "application/vnd.etsi.asic-s+zip"
-  ],
-  "tst": [
-    "application/vnd.etsi.timestamp-token"
-  ],
-  "mpw": [
-    "application/vnd.exstream-empower+zip"
-  ],
-  "ecigprofile": [
-    "application/vnd.evolv.ecig.profile"
-  ],
-  "ecig": [
-    "application/vnd.evolv.ecig.settings"
-  ],
-  "ecigtheme": [
-    "application/vnd.evolv.ecig.theme"
-  ],
-  "dim": [
-    "application/vnd.fastcopy-disk-image"
-  ],
-  "msd": [
-    "application/vnd.fdsn.mseed"
-  ],
-  "flb": [
-    "application/vnd.ficlab.flb+zip"
-  ],
-  "zfc": [
-    "application/vnd.filmit.zfc"
-  ],
-  "sfd": [
-    "application/vnd.font-fontforge-sfd"
-  ],
-  "xct": [
-    "application/vnd.fujixerox.docuworks.container"
-  ],
-  "ggs": [
-    "application/vnd.geogebra.slides"
-  ],
-  "hbc": [
-    "application/vnd.hbci"
-  ],
-  "kom": [
-    "application/vnd.hbci"
-  ],
-  "upa": [
-    "application/vnd.hbci"
-  ],
-  "pkd": [
-    "application/vnd.hbci"
-  ],
-  "bpd": [
-    "application/vnd.hbci"
-  ],
-  "hdt": [
-    "application/vnd.hdt"
-  ],
-  "hpi": [
-    "application/vnd.hp-hpid"
-  ],
-  "emm": [
-    "application/vnd.ibm.electronic-media"
-  ],
-  "1905.1": [
-    "application/vnd.ieee.1905"
-  ],
-  "imf": [
-    "application/vnd.imagemeter.folder+zip"
-  ],
-  "imi": [
-    "application/vnd.imagemeter.image+zip"
-  ],
-  "imscc": [
-    "application/vnd.ims.imsccv1p1"
-  ],
-  "sdf": [
-    "application/vnd.Kinar"
-  ],
-  "las": [
-    "application/vnd.las"
-  ],
-  "lasjson": [
-    "application/vnd.las.las+json"
-  ],
-  "lcs": [
-    "application/vnd.logipipe.circuit+zip"
-  ],
-  "lca": [
-    "application/vnd.logipipe.circuit+zip"
-  ],
-  "loom": [
-    "application/vnd.loom"
-  ],
-  "vew": [
-    "application/vnd.lotus-approach"
-  ],
-  "prz": [
-    "application/vnd.lotus-freelance"
-  ],
-  "ndl": [
-    "application/vnd.lotus-notes"
-  ],
-  "ns4": [
-    "application/vnd.lotus-notes"
-  ],
-  "ns3": [
-    "application/vnd.lotus-notes"
-  ],
-  "ns2": [
-    "application/vnd.lotus-notes"
-  ],
-  "nsh": [
-    "application/vnd.lotus-notes"
-  ],
-  "nsg": [
-    "application/vnd.lotus-notes"
-  ],
-  "or3": [
-    "application/vnd.lotus-organizer"
-  ],
-  "or2": [
-    "application/vnd.lotus-organizer"
-  ],
-  "mvt": [
-    "application/vnd.mapbox-vector-tile"
-  ],
-  "mdc": [
-    "application/vnd.marlin.drm.mdcf"
-  ],
-  "mmdb": [
-    "application/vnd.maxmind.maxmind-db"
-  ],
-  "msa": [
-    "application/vnd.msa-disk-image"
-  ],
-  "crtr": [
-    "application/vnd.multiad.creator"
-  ],
-  "nebul": [
-    "application/vnd.nebumind.line"
-  ],
-  "line": [
-    "application/vnd.nebumind.line"
-  ],
-  "entity": [
-    "application/vnd.nervana"
-  ],
-  "request": [
-    "application/vnd.nervana"
-  ],
-  "bkm": [
-    "application/vnd.nervana"
-  ],
-  "kcm": [
-    "application/vnd.nervana"
-  ],
-  "nimn": [
-    "application/vnd.nimn"
-  ],
-  "tam": [
-    "application/vnd.onepager"
-  ],
-  "tamp": [
-    "application/vnd.onepagertamp"
-  ],
-  "tamx": [
-    "application/vnd.onepagertamx"
-  ],
-  "tat": [
-    "application/vnd.onepagertat"
-  ],
-  "tatp": [
-    "application/vnd.onepagertatp"
-  ],
-  "tatx": [
-    "application/vnd.onepagertatx"
-  ],
-  "obgx": [
-    "application/vnd.openblox.game+xml"
-  ],
-  "obg": [
-    "application/vnd.openblox.game-binary"
-  ],
-  "oeb": [
-    "application/vnd.openeye.oeb"
-  ],
-  "osm": [
-    "application/vnd.openstreetmap.data+xml"
-  ],
-  "ndc": [
-    "application/vnd.osa.netdeploy"
-  ],
-  "oxlicg": [
-    "application/vnd.oxli.countgraph"
-  ],
-  "plp": [
-    "application/vnd.panoply"
-  ],
-  "dive": [
-    "application/vnd.patentdive"
-  ],
-  "pil": [
-    "application/vnd.piaccess.application-licence"
-  ],
-  "preminet": [
-    "application/vnd.preminet"
-  ],
-  "vbox": [
-    "application/vnd.previewsystems.box"
-  ],
-  "psfs": [
-    "application/vnd.psfs"
-  ],
-  "bar": [
-    "application/vnd.qualcomm.brew-app-res"
-  ],
-  "quox": [
-    "application/vnd.quobject-quoxdocument"
-  ],
-  "quiz": [
-    "application/vnd.quobject-quoxdocument"
-  ],
-  "tree": [
-    "application/vnd.rainstor.data"
-  ],
-  "SAR": [
-    "application/vnd.sar"
-  ],
-  "sla": [
-    "application/vnd.scribus"
-  ],
-  "slaz": [
-    "application/vnd.scribus"
-  ],
-  "s3df": [
-    "application/vnd.sealed.3df"
-  ],
-  "scsf": [
-    "application/vnd.sealed.csf"
-  ],
-  "sdoc": [
-    "application/vnd.sealed.doc"
-  ],
-  "sdo": [
-    "application/vnd.sealed.doc"
-  ],
-  "s1w": [
-    "application/vnd.sealed.doc"
-  ],
-  "seml": [
-    "application/vnd.sealed.eml"
-  ],
-  "sem": [
-    "application/vnd.sealed.eml"
-  ],
-  "smht": [
-    "application/vnd.sealed.mht"
-  ],
-  "smh": [
-    "application/vnd.sealed.mht"
-  ],
-  "sppt": [
-    "application/vnd.sealed.ppt"
-  ],
-  "s1p": [
-    "application/vnd.sealed.ppt"
-  ],
-  "stif": [
-    "application/vnd.sealed.tiff"
-  ],
-  "sxls": [
-    "application/vnd.sealed.xls"
-  ],
-  "sxl": [
-    "application/vnd.sealed.xls"
-  ],
-  "s1e": [
-    "application/vnd.sealed.xls"
-  ],
-  "stml": [
-    "application/vnd.sealedmedia.softseal.html"
-  ],
-  "s1h": [
-    "application/vnd.sealedmedia.softseal.html"
-  ],
-  "spdf": [
-    "application/vnd.sealedmedia.softseal.pdf"
-  ],
-  "s1a": [
-    "application/vnd.sealedmedia.softseal.pdf"
-  ],
-  "ssv": [
-    "application/vnd.shade-save-file"
-  ],
-  "shp": [
-    "application/vnd.shp"
-  ],
-  "shx": [
-    "application/vnd.shx"
-  ],
-  "sr": [
-    "application/vnd.sigrok.session"
-  ],
-  "notebook": [
-    "application/vnd.smart.notebook"
-  ],
-  "ptrom": [
-    "application/vnd.snesdev-page-table"
-  ],
-  "pt": [
-    "application/vnd.snesdev-page-table"
-  ],
-  "zfo": [
-    "application/vnd.software602.filler.form-xml-zip"
-  ],
-  "sqlite": [
-    "application/vnd.sqlite3"
-  ],
-  "wadl": [
-    "application/vnd.sun.wadl+xml"
-  ],
-  "scl": [
-    "application/vnd.sycle+xml"
-  ],
-  "ddf": [
-    "application/vnd.syncml.dmddf+xml"
-  ],
-  "qvd": [
-    "application/vnd.theqvd"
-  ],
-  "ppttc": [
-    "application/vnd.think-cell.ppttc+json"
-  ],
-  "vfr": [
-    "application/vnd.tml"
-  ],
-  "viaframe": [
-    "application/vnd.tml"
-  ],
-  "frm": [
-    "application/vnd.ufdl"
-  ],
-  "uo": [
-    "application/vnd.uoml+xml"
-  ],
-  "urim": [
-    "application/vnd.uri-map"
-  ],
-  "urimap": [
-    "application/vnd.uri-map"
-  ],
-  "vmt": [
-    "application/vnd.valve.source.material"
-  ],
-  "mxi": [
-    "application/vnd.vd-study"
-  ],
-  "study-inter": [
-    "application/vnd.vd-study"
-  ],
-  "model-inter": [
-    "application/vnd.vd-study"
-  ],
-  "vwx": [
-    "application/vnd.vectorworks"
-  ],
-  "istc": [
-    "application/vnd.veryant.thin"
-  ],
-  "isws": [
-    "application/vnd.veryant.thin"
-  ],
-  "VES": [
-    "application/vnd.ves.encrypted"
-  ],
-  "vsc": [
-    "application/vnd.vidsoft.vidconference"
-  ],
-  "sic": [
-    "application/vnd.wap.sic"
-  ],
-  "slc": [
-    "application/vnd.wap.slc"
-  ],
-  "p2p": [
-    "application/vnd.wfa.p2p"
-  ],
-  "wmc": [
-    "application/vnd.wmc"
-  ],
-  "xfd": [
-    "application/vnd.xfdl"
-  ],
-  "cpkg": [
-    "application/vnd.xmpie.cpkg"
-  ],
-  "dpkg": [
-    "application/vnd.xmpie.dpkg"
-  ],
-  "ppkg": [
-    "application/vnd.xmpie.ppkg"
-  ],
-  "xlim": [
-    "application/vnd.xmpie.xlim"
-  ],
-  "yme": [
-    "application/vnd.yaoweme"
-  ],
-  "vcj": [
-    "application/voucher-cms+json"
-  ],
-  "wasm": [
-    "application/wasm"
-  ],
-  "wif": [
-    "application/watcherinfo+xml"
-  ],
-  "xav": [
-    "application/xcap-att+xml"
-  ],
-  "xca": [
-    "application/xcap-caps+xml"
-  ],
-  "xel": [
-    "application/xcap-el+xml"
-  ],
-  "xns": [
-    "application/xcap-ns+xml"
-  ],
-  "xhtm": [
-    "application/xhtml+xml"
-  ],
-  "acn": [
-    "audio/asc"
-  ],
-  "aal": [
-    "audio/ATRAC-ADVANCED-LOSSLESS"
-  ],
-  "at3": [
-    "audio/ATRAC3"
-  ],
-  "aa3": [
-    "audio/ATRAC3"
-  ],
-  "omg": [
-    "audio/ATRAC3"
-  ],
-  "dls": [
-    "audio/dls"
-  ],
-  "evc": [
-    "audio/EVRC"
-  ],
-  "evb": [
-    "audio/EVRCB"
-  ],
-  "enw": [
-    "audio/EVRCNW"
-  ],
-  "evw": [
-    "audio/EVRCWB"
-  ],
-  "lbc": [
-    "audio/iLBC"
-  ],
-  "l16": [
-    "audio/L16"
-  ],
-  "mhas": [
-    "audio/mhas"
-  ],
-  "mp1": [
-    "audio/mpeg"
-  ],
-  "qcp": [
-    "audio/QCELP"
-  ],
-  "sofa": [
-    "audio/sofa"
-  ],
-  "koz": [
-    "audio/vnd.audiokoz"
-  ],
-  "plj": [
-    "audio/vnd.everad.plj"
-  ],
-  "vbk": [
-    "audio/vnd.nortel.vbk"
-  ],
-  "multitrack": [
-    "audio/vnd.presonus.multitrack"
-  ],
-  "smp3": [
-    "audio/vnd.sealedmedia.softseal.mpeg"
-  ],
-  "smp": [
-    "audio/vnd.sealedmedia.softseal.mpeg"
-  ],
-  "s1m": [
-    "audio/vnd.sealedmedia.softseal.mpeg"
-  ],
-  "avci": [
-    "image/avci"
-  ],
-  "avcs": [
-    "image/avcs"
-  ],
-  "drle": [
-    "image/dicom-rle"
-  ],
-  "heics": [
-    "image/heic-sequence"
-  ],
-  "heifs": [
-    "image/heif-sequence"
-  ],
-  "hej2": [
-    "image/hej2k"
-  ],
-  "hsj2": [
-    "image/hsj2"
-  ],
-  "jls": [
-    "image/jls"
-  ],
-  "jph": [
-    "image/jph"
-  ],
-  "jhc": [
-    "image/jphc"
-  ],
-  "jfif": [
-    "image/jpeg"
-  ],
-  "jxr": [
-    "image/jxr"
-  ],
-  "jxra": [
-    "image/jxrA"
-  ],
-  "jxrs": [
-    "image/jxrS"
-  ],
-  "jxs": [
-    "image/jxs"
-  ],
-  "jxsc": [
-    "image/jxsc"
-  ],
-  "jxsi": [
-    "image/jxsi"
-  ],
-  "jxss": [
-    "image/jxss"
-  ],
-  "btf": [
-    "image/prs.btif"
-  ],
-  "pti": [
-    "image/prs.pti"
-  ],
-  "t38": [
-    "image/t38"
-  ],
-  "tfx": [
-    "image/tiff-fx"
-  ],
-  "azv": [
-    "image/vnd.airzip.accelerator.azv"
-  ],
-  "pgb": [
-    "image/vnd.globalgraphics.pgb"
-  ],
-  "apng": [
-    "image/vnd.mozilla.apng"
-  ],
-  "b16": [
-    "image/vnd.pco.b16"
-  ],
-  "hdr": [
-    "image/vnd.radiance"
-  ],
-  "rgbe": [
-    "image/vnd.radiance"
-  ],
-  "xyze": [
-    "image/vnd.radiance"
-  ],
-  "spng": [
-    "image/vnd.sealed.png"
-  ],
-  "spn": [
-    "image/vnd.sealed.png"
-  ],
-  "s1n": [
-    "image/vnd.sealed.png"
-  ],
-  "sgif": [
-    "image/vnd.sealedmedia.softseal.gif"
-  ],
-  "s1g": [
-    "image/vnd.sealedmedia.softseal.gif"
-  ],
-  "sjpg": [
-    "image/vnd.sealedmedia.softseal.jpg"
-  ],
-  "sjp": [
-    "image/vnd.sealedmedia.softseal.jpg"
-  ],
-  "s1j": [
-    "image/vnd.sealedmedia.softseal.jpg"
-  ],
-  "tap": [
-    "image/vnd.tencent.tap"
-  ],
-  "vtf": [
-    "image/vnd.valve.source.texture"
-  ],
-  "u8msg": [
-    "message/global"
-  ],
-  "u8dsn": [
-    "message/global-delivery-status"
-  ],
-  "u8mdn": [
-    "message/global-disposition-notification"
-  ],
-  "u8hdr": [
-    "message/global-headers"
-  ],
-  "mail": [
-    "message/rfc822"
-  ],
-  "art": [
-    "message/rfc822"
-  ],
-  "win": [
-    "model/vnd.gdl"
-  ],
-  "dor": [
-    "model/vnd.gdl"
-  ],
-  "lmp": [
-    "model/vnd.gdl"
-  ],
-  "rsm": [
-    "model/vnd.gdl"
-  ],
-  "msm": [
-    "model/vnd.gdl"
-  ],
-  "ism": [
-    "model/vnd.gdl"
-  ],
-  "moml": [
-    "model/vnd.moml+xml"
-  ],
-  "ogex": [
-    "model/vnd.opengex"
-  ],
-  "x_b": [
-    "model/vnd.parasolid.transmit.binary"
-  ],
-  "xmt_bin": [
-    "model/vnd.parasolid.transmit.binary"
-  ],
-  "x_t": [
-    "model/vnd.parasolid.transmit.text"
-  ],
-  "xmt_txt": [
-    "model/vnd.parasolid.transmit.text"
-  ],
-  "pyox": [
-    "model/vnd.pytha.pyox"
-  ],
-  "vds": [
-    "model/vnd.sap.vds"
-  ],
-  "usdz": [
-    "model/vnd.usdz+zip"
-  ],
-  "bsp": [
-    "model/vnd.valve.source.compiled-map"
-  ],
-  "bmed": [
-    "multipart/vnd.bint.med-plus"
-  ],
-  "vpm": [
-    "multipart/voice-message"
-  ],
-  "CQL": [
-    "text/cql"
-  ],
-  "soa": [
-    "text/dns"
-  ],
-  "zone": [
-    "text/dns"
-  ],
-  "gff3": [
-    "text/gff3"
-  ],
-  "cnd": [
-    "text/jcr-cnd"
-  ],
-  "miz": [
-    "text/mizar"
-  ],
-  "provn": [
-    "text/provenance-notation"
-  ],
-  "tag": [
-    "text/prs.lines.tag"
-  ],
-  "shaclc": [
-    "text/shaclc"
-  ],
-  "shc": [
-    "text/shaclc"
-  ],
-  "spdx": [
-    "text/spdx"
-  ],
-  "abc": [
-    "text/vnd.abc"
-  ],
-  "ascii": [
-    "text/vnd.ascii-art"
-  ],
-  "copyright": [
-    "text/vnd.debian.copyright"
-  ],
-  "jtd": [
-    "text/vnd.esmertec.theme-descriptor"
-  ],
-  "flt": [
-    "text/vnd.ficlab.flt"
-  ],
-  "hans": [
-    "text/vnd.hans"
-  ],
-  "hgl": [
-    "text/vnd.hgl"
-  ],
-  "3dm": [
-    "text/vnd.in3d.3dml"
-  ],
-  "spo": [
-    "text/vnd.in3d.spot"
-  ],
-  "mpf": [
-    "text/vnd.ms-mediapackage"
-  ],
-  "ccc": [
-    "text/vnd.net2phone.commcenter.command"
-  ],
-  "uric": [
-    "text/vnd.si.uricatalogue"
-  ],
-  "sos": [
-    "text/vnd.sosi"
-  ],
-  "si": [
-    "text/vnd.wap.si"
-  ],
-  "sl": [
-    "text/vnd.wap.sl"
-  ],
-  "m4s": [
-    "video/iso.segment"
-  ],
-  "nim": [
-    "video/vnd.nokia.interleaved-multimedia"
-  ],
-  "smpg": [
-    "video/vnd.sealed.mpeg1"
-  ],
-  "s11": [
-    "video/vnd.sealed.mpeg1"
-  ],
-  "s14": [
-    "video/vnd.sealed.mpeg4"
-  ],
-  "sswf": [
-    "video/vnd.sealed.swf"
-  ],
-  "ssw": [
-    "video/vnd.sealed.swf"
-  ],
-  "smov": [
-    "video/vnd.sealedmedia.softseal.mov"
-  ],
-  "smo": [
-    "video/vnd.sealedmedia.softseal.mov"
-  ],
-  "s1q": [
-    "video/vnd.sealedmedia.softseal.mov"
-  ],
-  "dd": [
-    "application/vnd.oma.dd+xml"
-  ],
-  "dcf": [
-    "application/vnd.oma.drm.content"
-  ],
-  "o4a": [
-    "application/vnd.oma.drm.dcf"
-  ],
-  "o4v": [
-    "application/vnd.oma.drm.dcf"
-  ],
-  "dm": [
-    "application/vnd.oma.drm.message"
-  ],
-  "drc": [
-    "application/vnd.oma.drm.rights+wbxml"
-  ],
-  "dr": [
-    "application/vnd.oma.drm.rights+xml"
-  ],
-  "mms": [
-    "application/vnd.wap.mms-message"
-  ],
-  "crx": [
-    "application/x-chrome-extension"
-  ],
-  "sandboxed": [
-    "text/html-sandboxed"
-  ],
-  "ice": [
-    "x-conference/x-cooltalk"
   ]
 }
