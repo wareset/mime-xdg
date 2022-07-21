@@ -1,5 +1,5 @@
-# mime-info
-mimetypes, mimeheads and mimenotes from shared-mime-info
+# mime-xdg
+mimetypes, mimeheads and mimenotes from xdg/shared-mime-info
 
 ## Note
 
@@ -19,7 +19,7 @@ import {
   EXTENSIONS, MIME_TYPES,
   ext, extname, 
   mimeType, mimeList 
-} from 'mime-info'
+} from 'mime-xdg'
 
 
 // OBJECTS
@@ -134,7 +134,7 @@ many mime types have their own main mime type
 import { 
   MIME_HEADS,
   mimeHead
-} from 'mime-info/heads'
+} from 'mime-xdg/heads'
 
 // OBJECT
 
@@ -167,7 +167,7 @@ some mime types have a short description
 import { 
   MIME_NOTES,
   mimeNote
-} from 'mime-info/notes'
+} from 'mime-xdg/notes'
 
 // OBJECT
 

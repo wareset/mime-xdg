@@ -1,20 +1,20 @@
 {
-  "name": "mime-info",
+  "name": "mime-xdg",
   "version": "1.0.0",
-  "description": "mimetypes, mimeheads and mimenotes from shared-mime-info",
+  "description": "mimetypes, mimeheads and mimenotes from xdg/shared-mime-info",
   "keywords": [
     "mime",
     "mimetype",
     "extname"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/wareset/mime-info",
+  "homepage": "https://github.com/wareset/mime-xdg",
   "bugs": {
-    "url": "https://github.com/wareset/mime-info/issues"
+    "url": "https://github.com/wareset/mime-xdg/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wareset/mime-info.git"
+    "url": "git+https://github.com/wareset/mime-xdg.git"
   },
   "author": "rease <cftcview@gmail.com>",
   "main": "index",
