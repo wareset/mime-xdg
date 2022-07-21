@@ -1,0 +1,55 @@
+{
+  "name": "mime-info",
+  "version": "1.0.0",
+  "description": "Packing and unpacking of built-in objects while preserving instances",
+  "keywords": [
+    "pack",
+    "unpack",
+    "json",
+    "minify",
+    "circular",
+    "compress"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/wareset/mime-info",
+  "bugs": {
+    "url": "https://github.com/wareset/mime-info/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wareset/mime-info.git"
+  },
+  "author": "rease <cftcview@gmail.com>",
+  "main": "index",
+  "module": "index.mjs",
+  "types": "index.d.ts",
+  "files": [
+    "README.md",
+    "heads",
+    "index.d.ts",
+    "index.js",
+    "index.mjs",
+    "lib",
+    "notes",
+    "types"
+  ],
+  "scripts": {
+    "data": "cd ./__data__ && node ./index.js",
+    "data:watch": "cd ./__data__ && nodemon --inspect ./index.js --watch ./index.js",
+    "dester": "dester ./src ./ --babel -t types",
+    "build": "npm run data && npm run -s dester -- -r -m",
+    "dev": "npm run -s dester -- -w --no-r"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/plugin-proposal-class-properties": "^7.18.0",
+    "@babel/plugin-transform-block-scoping": "^7.18.0",
+    "@babel/plugin-transform-template-literals": "^7.18.0",
+    "dester": "0.x",
+    "typescript": "4.x",
+    "nodemon": "^2.0.0",
+    "sax": "1.2.4",
+    "@types/sax": "1.2.4",
+    "xdg--shared-mime-info": "git+https://gitlab.freedesktop.org/xdg/shared-mime-info.git"
+  }
+}
