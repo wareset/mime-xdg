@@ -310,21 +310,21 @@ const createOptimizedData = async () => {
 
   let headsTs = '/* eslint-disable max-len */\n\n'
   const heads = JSON.stringify(HEADS).replace(/"/g, '')
-  headsTs += `export const HEADS_DATA = ${heads} as const\n\n`
+  headsTs += `export const _HEADS_DATA = ${heads} as const\n\n`
   headsTs += `export type TypeHeads = ${TYPE_HEADS}\n`
   await nodeFsPromises.writeFile(FILE_MIMEHEADS_TS, headsTs)
 
   let notesTs = '/* eslint-disable max-len */\n\n'
   const notes = JSON.stringify(NOTES).split(DUMMY_JSON).join('')
-  notesTs += `export const NOTES_LIST = ${JSON.stringify(NOTES_ARR)} as const\n\n`
-  notesTs += `export const NOTES_DATA = ${notes} as const\n\n`
+  notesTs += `export const _NOTES_LIST = ${JSON.stringify(NOTES_ARR)} as const\n\n`
+  notesTs += `export const _NOTES_DATA = ${notes} as const\n\n`
   notesTs += `export type TypeNotes = ${TYPE_NOTES}\n`
   await nodeFsPromises.writeFile(FILE_MIMENOTES_TS, notesTs)
 
   let finalJs = '/* eslint-disable max-len */\n\n'
-  finalJs += `export const MIME_TYPES = ${JSON.stringify(MIME_TYPES_ARR)} as const\n\n`
-  finalJs += `export const MIME_NAMES = ${JSON.stringify(MIME_SUBTYPES_ARR_ARR)} as const\n\n`
-  finalJs += `export const EXTENSIONS = ${JSON.stringify(EXTENSIONS)} as const\n\n`
+  finalJs += `export const _MIME_TYPES = ${JSON.stringify(MIME_TYPES_ARR)} as const\n\n`
+  finalJs += `export const _MIME_NAMES = ${JSON.stringify(MIME_SUBTYPES_ARR_ARR)} as const\n\n`
+  finalJs += `export const _EXTENSIONS = ${JSON.stringify(EXTENSIONS)} as const\n\n`
   finalJs += `export type TypeExtnames = ${TYPE_EXTNAMES}\n`
   await nodeFsPromises.writeFile(FILE_MIMETYPES_TS, finalJs)
 }

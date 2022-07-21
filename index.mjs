@@ -3,26 +3,36 @@
 dester builds:
 index.ts
 */
-import { EXTENSIONS as r, MIME_TYPES as e, MIME_NAMES as a } from "./lib/mimes";
+import { createObject as r } from "./lib";
 
-var i = {};
+import { _EXTENSIONS as e, _MIME_TYPES as i, _MIME_NAMES as t } from "./lib/mimes";
 
-for (var o in r) {
-    i[o] = [];
-    for (var t = r[o], n = 0, f = 0; f < t.length; f++) i[o][n++] = e[t[f]] + "/" + a[t[f++]][t[f]];
-}
-
-for (var l = {}, s = e.length; s-- > 0; ) {
-    l[e[s]] = {};
-    for (var v = a[s].length; v-- > 0; ) l[e[s]][a[s][v]] = !0;
-}
-
-var m = r => {
-    for (var e, a = "", o = "", t = "", n = "", f = (r = r.trim()).length; f-- > 0; ) {
-        if ("." === (e = r[f])) o in i && (a = o) || t in i && (a = t) || n in i && (a = n); else if ("/" === e || "\\" === e) break;
-        o = e + o, t = e.toUpperCase() + t, n = e.toLowerCase() + n;
+var a = (() => {
+    var a = r();
+    for (var n in e) {
+        a[n] = [];
+        for (var o = e[n], f = 0, l = 0; l < o.length; l++) a[n][f++] = i[o[l]] + "/" + t[o[l++]][o[l]];
     }
     return a;
-}, g = r => (r = m(r)) && "." + r, h = r => (r = m(r)) ? i[r][0] : r, p = r => (r = m(r)) ? i[r].slice(0) : [];
+})(), n = (() => {
+    for (var e = r(), a = i.length; a-- > 0; ) {
+        e[i[a]] = r();
+        for (var n = t[a].length; n-- > 0; ) e[i[a]][t[a][n]] = !0;
+    }
+    return e;
+})(), o = r => {
+    for (var e, i = "", t = "", n = "", o = "", f = (r = r.trim()).length; f-- > 0; ) {
+        if ("." === (e = r[f])) t in a && (i = t) || n in a && (i = n) || o in a && (i = o); else if ("/" === e || "\\" === e) break;
+        t = e + t, n = e.toUpperCase() + n, o = e.toLowerCase() + o;
+    }
+    return i;
+}, f = r => {
+    var e = o(r);
+    if (!e) {
+        var i = r.lastIndexOf(".");
+        i > -1 && (e = r.slice(i + 1));
+    }
+    return e ? "." + e : "";
+}, l = r => (r = o(r)) ? a[r][0] : r, v = r => (r = o(r)) ? a[r].slice(0) : [];
 
-export { i as EXTENSIONS, l as MIME_TYPES, m as ext, g as extname, h as mime, p as mimeList };
+export { a as EXTENSIONS, n as MIME_TYPES, o as ext, f as extname, l as mime, v as mimeList };

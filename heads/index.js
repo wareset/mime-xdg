@@ -7,7 +7,10 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-for (var e, r = require("../lib/heads"), E = require("../lib/mimes"), M = {}, A = r.HEADS_DATA.length; A--; ) for (var _ in r.HEADS_DATA[A]) e = r.HEADS_DATA[A][_ = +_], 
-M[E.MIME_TYPES[A] + "/" + E.MIME_NAMES[A][_]] = E.MIME_TYPES[e[0]] + "/" + E.MIME_NAMES[e[0]][e[1]];
+var e = require("../lib"), r = require("../lib/heads"), _ = require("../lib/mimes"), E = (() => {
+    for (var E, M = e.createObject(), A = r._HEADS_DATA.length; A--; ) for (var i in r._HEADS_DATA[A]) E = r._HEADS_DATA[A][i = +i], 
+    M[_._MIME_TYPES[A] + "/" + _._MIME_NAMES[A][i]] = _._MIME_TYPES[E[0]] + "/" + _._MIME_NAMES[E[0]][E[1]];
+    return M;
+})();
 
-exports.MIME_HEADS = M, exports.mimeHead = e => M[e] || "";
+exports.MIME_HEADS = E, exports.mimeHead = e => E[e] || "";

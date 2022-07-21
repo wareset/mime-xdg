@@ -1,31 +1,39 @@
-import { EXTENSIONS as EXTENSIONS_ORIGIN, TypeExtnames } from './lib/mimes'
-import { MIME_TYPES as MIME_TYPES_ORIGIN, MIME_NAMES } from './lib/mimes'
+import { createObject } from './lib'
+import { _EXTENSIONS, TypeExtnames } from './lib/mimes'
+import { _MIME_TYPES, _MIME_NAMES } from './lib/mimes'
 
 // export const EXTNAMES = {} as Readonly<{ [K in keyof typeof EXTENSIONS]?: string[] }>
 // export const EXTNAMES = {} as Readonly<Record<keyof typeof EXTENSIONS, string[]>>
 
-const EXTENSIONS = {} as TypeExtnames
+export const EXTENSIONS = ((): TypeExtnames => {
+  const res = createObject() as TypeExtnames
 
-for (const ext in EXTENSIONS_ORIGIN) {
-  // @ts-ignore
-  EXTENSIONS[ext] = []
-  // @ts-ignore
-  for (let a = EXTENSIONS_ORIGIN[ext], j = 0, i = 0; i < a.length; i++) {
+  for (const ext in _EXTENSIONS) {
     // @ts-ignore
-    EXTENSIONS[ext][j++] = MIME_TYPES_ORIGIN[a[i]] + '/' + MIME_NAMES[a[i++]][a[i]]
+    res[ext] = []
+    // @ts-ignore
+    for (let a = _EXTENSIONS[ext], j = 0, i = 0; i < a.length; i++) {
+      // @ts-ignore
+      res[ext][j++] = _MIME_TYPES[a[i]] + '/' + _MIME_NAMES[a[i++]][a[i]]
+    }
   }
-}
 
-// @ts-ignore
-const MIME_TYPES: { [K in typeof MIME_TYPES[number]]: { [key: string]: true } } = {}
-for (let i = MIME_TYPES_ORIGIN.length; i-- > 0;) {
-  MIME_TYPES[MIME_TYPES_ORIGIN[i]] = {}
-  for (let j = MIME_NAMES[i].length; j-- > 0;) {
-    MIME_TYPES[MIME_TYPES_ORIGIN[i]][MIME_NAMES[i][j]] = true
+  return res
+})()
+
+export const MIME_TYPES = (() => {
+  const res =
+    createObject() as { [K in typeof _MIME_TYPES[number]]: { [key: string]: true } }
+  
+  for (let i = _MIME_TYPES.length; i-- > 0;) {
+    res[_MIME_TYPES[i]] = createObject()
+    for (let j = _MIME_NAMES[i].length; j-- > 0;) {
+      res[_MIME_TYPES[i]][_MIME_NAMES[i][j]] = true
+    }
   }
-}
 
-export { EXTENSIONS, MIME_TYPES }
+  return res
+})()
 
 export const ext = (file: string): keyof TypeExtnames | '' => {
   file = file.trim()
@@ -40,8 +48,14 @@ export const ext = (file: string): keyof TypeExtnames | '' => {
   return ext
 }
 
-export const extname = (filepath: string): string =>
-  (filepath = ext(filepath)) && '.' + filepath
+export const extname = (filepath: string): string => {
+  let _ext: string = ext(filepath)
+  if (!_ext) {
+    const idx = filepath.lastIndexOf('.')
+    if (idx > -1) _ext = filepath.slice(idx + 1)
+  }
+  return _ext ? '.' + _ext : ''
+}
 
 export const mime = (filepath: string): string =>
   // @ts-ignore

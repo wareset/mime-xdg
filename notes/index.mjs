@@ -3,12 +3,15 @@
 dester builds:
 notes.ts
 */
-import { NOTES_DATA as r, NOTES_LIST as o } from "../lib/notes";
+import { createObject as r } from "../lib";
 
-import { MIME_TYPES as l, MIME_NAMES as m } from "../lib/mimes";
+import { _NOTES_DATA as o, _NOTES_LIST as m } from "../lib/notes";
 
-for (var t = {}, e = r.length; e--; ) for (var i, f = r[e].length; f--; ) null != (i = r[e][f]) && (t[l[e] + "/" + m[e][f]] = o[i]);
+import { _MIME_TYPES as t, _MIME_NAMES as i } from "../lib/mimes";
 
-var n = r => t[r] || "";
+var l = (() => {
+    for (var l = r(), e = o.length; e--; ) for (var f, n = o[e].length; n--; ) null != (f = o[e][n]) && (l[t[e] + "/" + i[e][n]] = m[f]);
+    return l;
+})(), e = r => l[r] || "";
 
-export { t as MIME_NOTES, n as mimeNote };
+export { l as MIME_NOTES, e as mimeNote };

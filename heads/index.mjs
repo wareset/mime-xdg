@@ -3,12 +3,16 @@
 dester builds:
 heads.ts
 */
-import { HEADS_DATA as r } from "../lib/heads";
+import { createObject as r } from "../lib";
 
-import { MIME_TYPES as o, MIME_NAMES as i } from "../lib/mimes";
+import { _HEADS_DATA as o } from "../lib/heads";
 
-for (var m, a = {}, e = r.length; e--; ) for (var f in r[e]) m = r[e][f = +f], a[o[e] + "/" + i[e][f]] = o[m[0]] + "/" + i[m[0]][m[1]];
+import { _MIME_TYPES as i, _MIME_NAMES as m } from "../lib/mimes";
 
-var t = r => a[r] || "";
+var t = (() => {
+    for (var t, e = r(), f = o.length; f--; ) for (var a in o[f]) t = o[f][a = +a], 
+    e[i[f] + "/" + m[f][a]] = i[t[0]] + "/" + m[t[0]][t[1]];
+    return e;
+})(), e = r => t[r] || "";
 
-export { a as MIME_HEADS, t as mimeHead };
+export { t as MIME_HEADS, e as mimeHead };

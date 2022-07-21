@@ -1,19 +1,22 @@
-import { HEADS_DATA, TypeHeads } from './lib/heads'
-import { MIME_TYPES, MIME_NAMES } from './lib/mimes'
+import { createObject } from './lib'
+import { _HEADS_DATA, TypeHeads } from './lib/heads'
+import { _MIME_TYPES, _MIME_NAMES } from './lib/mimes'
 
-const MIME_HEADS = {} as TypeHeads
+export const MIME_HEADS = ((): TypeHeads => {
+  const res = createObject() as TypeHeads
 
-for (let mimeArr: [number, number], i = HEADS_DATA.length; i--;) {
-  for (let j in HEADS_DATA[i]) {
-    // @ts-ignore
-    mimeArr = HEADS_DATA[i][j = +j]
-    // @ts-ignore
-    MIME_HEADS[MIME_TYPES[i] + '/' + MIME_NAMES[i][j]] =
-      MIME_TYPES[mimeArr[0]] + '/' + MIME_NAMES[mimeArr[0]][mimeArr[1]]
+  for (let mimeArr: [number, number], i = _HEADS_DATA.length; i--;) {
+    for (let j in _HEADS_DATA[i]) {
+      // @ts-ignore
+      mimeArr = _HEADS_DATA[i][j = +j]
+      // @ts-ignore
+      res[_MIME_TYPES[i] + '/' + _MIME_NAMES[i][j]] =
+       _MIME_TYPES[mimeArr[0]] + '/' + _MIME_NAMES[mimeArr[0]][mimeArr[1]]
+    }
   }
-}
 
-export { MIME_HEADS }
+  return res
+})()
 
 export const mimeHead = (mime: string): string =>
   // @ts-ignore

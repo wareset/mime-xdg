@@ -1,4 +1,4 @@
-export declare const HEADS_DATA: readonly [{
+export declare const _HEADS_DATA: readonly [{
     readonly 0: readonly [3, 3];
     readonly 10: readonly [0, 735];
     readonly 21: readonly [0, 735];

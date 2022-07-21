@@ -7,25 +7,32 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("./lib/mimes"), r = {};
-
-for (var E in e.EXTENSIONS) {
-    r[E] = [];
-    for (var t = e.EXTENSIONS[E], M = 0, o = 0; o < t.length; o++) r[E][M++] = e.MIME_TYPES[t[o]] + "/" + e.MIME_NAMES[t[o++]][t[o]];
-}
-
-for (var i = {}, s = e.MIME_TYPES.length; s-- > 0; ) {
-    i[e.MIME_TYPES[s]] = {};
-    for (var S = e.MIME_NAMES[s].length; S-- > 0; ) i[e.MIME_TYPES[s]][e.MIME_NAMES[s][S]] = !0;
-}
-
-var a = e => {
-    for (var E, t = "", M = "", o = "", i = "", s = (e = e.trim()).length; s-- > 0; ) {
-        if ("." === (E = e[s])) M in r && (t = M) || o in r && (t = o) || i in r && (t = i); else if ("/" === E || "\\" === E) break;
-        M = E + M, o = E.toUpperCase() + o, i = E.toLowerCase() + i;
+var e = require("./lib"), r = require("./lib/mimes"), t = (() => {
+    var t = e.createObject();
+    for (var E in r._EXTENSIONS) {
+        t[E] = [];
+        for (var M = r._EXTENSIONS[E], i = 0, _ = 0; _ < M.length; _++) t[E][i++] = r._MIME_TYPES[M[_]] + "/" + r._MIME_NAMES[M[_++]][M[_]];
     }
     return t;
+})(), E = (() => {
+    for (var t = e.createObject(), E = r._MIME_TYPES.length; E-- > 0; ) {
+        t[r._MIME_TYPES[E]] = e.createObject();
+        for (var M = r._MIME_NAMES[E].length; M-- > 0; ) t[r._MIME_TYPES[E]][r._MIME_NAMES[E][M]] = !0;
+    }
+    return t;
+})(), M = e => {
+    for (var r, E = "", M = "", i = "", _ = "", a = (e = e.trim()).length; a-- > 0; ) {
+        if ("." === (r = e[a])) M in t && (E = M) || i in t && (E = i) || _ in t && (E = _); else if ("/" === r || "\\" === r) break;
+        M = r + M, i = r.toUpperCase() + i, _ = r.toLowerCase() + _;
+    }
+    return E;
 };
 
-exports.EXTENSIONS = r, exports.MIME_TYPES = i, exports.ext = a, exports.extname = e => (e = a(e)) && "." + e, 
-exports.mime = e => (e = a(e)) ? r[e][0] : e, exports.mimeList = e => (e = a(e)) ? r[e].slice(0) : [];
+exports.EXTENSIONS = t, exports.MIME_TYPES = E, exports.ext = M, exports.extname = e => {
+    var r = M(e);
+    if (!r) {
+        var t = e.lastIndexOf(".");
+        t > -1 && (r = e.slice(t + 1));
+    }
+    return r ? "." + r : "";
+}, exports.mime = e => (e = M(e)) ? t[e][0] : e, exports.mimeList = e => (e = M(e)) ? t[e].slice(0) : [];

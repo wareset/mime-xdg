@@ -7,6 +7,9 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-for (var e = require("../lib/notes"), r = require("../lib/mimes"), E = {}, T = e.NOTES_DATA.length; T--; ) for (var o, t = e.NOTES_DATA[T].length; t--; ) null != (o = e.NOTES_DATA[T][t]) && (E[r.MIME_TYPES[T] + "/" + r.MIME_NAMES[T][t]] = e.NOTES_LIST[o]);
+var e = require("../lib"), r = require("../lib/notes"), _ = require("../lib/mimes"), t = (() => {
+    for (var t = e.createObject(), E = r._NOTES_DATA.length; E--; ) for (var T, i = r._NOTES_DATA[E].length; i--; ) null != (T = r._NOTES_DATA[E][i]) && (t[_._MIME_TYPES[E] + "/" + _._MIME_NAMES[E][i]] = r._NOTES_LIST[T]);
+    return t;
+})();
 
-exports.MIME_NOTES = E, exports.mimeNote = e => E[e] || "";
+exports.MIME_NOTES = t, exports.mimeNote = e => t[e] || "";
