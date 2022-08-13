@@ -38,10 +38,6 @@
     "dev": "npm run -s dester -- -w --no-r"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.0",
-    "@babel/plugin-proposal-class-properties": "^7.18.0",
-    "@babel/plugin-transform-block-scoping": "^7.18.0",
-    "@babel/plugin-transform-template-literals": "^7.18.0",
     "dester": "0.x",
     "typescript": "4.x",
     "nodemon": "^2.0.0",
