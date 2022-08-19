@@ -33,7 +33,7 @@
   "scripts": {
     "data": "cd ./__data__ && node ./index.js",
     "data:watch": "cd ./__data__ && nodemon --inspect ./index.js --watch ./index.js",
-    "dester": "dester ./src ./ --babel -t types",
+    "dester": "dester ./src ./ -t types",
     "build": "npm run data && npm run -s dester -- -r -m",
     "dev": "npm run -s dester -- -w --no-r"
   },
