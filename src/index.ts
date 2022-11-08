@@ -37,24 +37,28 @@ export const MIME_TYPES = (() => {
 
 export const ext = (file: string): keyof TypeExtnames | '' => {
   file = file.trim()
-  let ext = '' as any
+  let res = '' as any
   for (let c: string, s = '', su = '', sl = '', i = file.length; i-- > 0;) {
     if ((c = file[i]) === '.') {
-      s in EXTENSIONS && (ext = s) ||
-      su in EXTENSIONS && (ext = su) || sl in EXTENSIONS && (ext = sl)
+      s in EXTENSIONS && (res = s) ||
+      su in EXTENSIONS && (res = su) || sl in EXTENSIONS && (res = sl)
     } else if (c === '/' || c === '\\') break
     s = c + s, su = c.toUpperCase() + su, sl = c.toLowerCase() + sl
   }
-  return ext
+  return res
 }
 
-export const extname = (filepath: string): string => {
-  let _ext: string = ext(filepath)
-  if (!_ext) {
-    const idx = filepath.lastIndexOf('.')
-    if (idx > -1) _ext = filepath.slice(idx + 1)
+export const extname = (file: string): string => {
+  let res: string = ext(file)
+  if (!res) {
+    file = file.trim()
+    for (let c: string, word = '', i = file.length; i-- > 0;) {
+      if ((c = file[i]) === '.') { res = word; break }
+      if (c === '/' || c === '\\') break
+      word = c + word
+    }
   }
-  return _ext ? '.' + _ext : ''
+  return res ? '.' + res : ''
 }
 
 export const mimeType = (filepath: string): string =>
