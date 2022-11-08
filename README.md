@@ -16,8 +16,9 @@ Library | Size** | Mimetypes | Extensions
 `mime-db (mime-types)`  | 136.8 KB | 2279 | 1180
 `mime` | 36.6 KB | 956 | 1173
 `mime-xdg*` | 48.8 KB | 1559 | 1619
-##### * without `mime-xdg/heads` and `mime-xdg/notes`
-##### ** Minified bundle size (not gzip)
+> \* without `mime-xdg/heads` and `mime-xdg/notes`
+
+> ** minified bundle size (current size, not .gz)
 ## Usage
 ### mimeType
 Basic library with all mime types
