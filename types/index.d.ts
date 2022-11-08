@@ -42,6 +42,6 @@ export declare const MIME_TYPES: {
     };
 };
 export declare const ext: (file: string) => keyof TypeExtnames | '';
-export declare const extname: (filepath: string) => string;
+export declare const extname: (file: string) => string;
 export declare const mimeType: (filepath: string) => string;
 export declare const mimeList: (filepath: string) => string[];

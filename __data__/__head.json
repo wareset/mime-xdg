@@ -231,6 +231,7 @@
   "application/x-markaby": "application/x-ruby",
   "text/x-crystal": "text/plain",
   "text/crystal": "text/plain",
+  "text/julia": "text/plain",
   "text/rust": "text/plain",
   "application/x-shared-library-la": "text/plain",
   "application/x-shellscript": "text/plain",

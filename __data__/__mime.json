@@ -4363,6 +4363,9 @@
     "text/x-crystal",
     "text/crystal"
   ],
+  "jl": [
+    "text/julia"
+  ],
   "la": [
     "application/x-shared-library-la"
   ],

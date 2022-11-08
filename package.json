@@ -1,6 +1,6 @@
 {
   "name": "mime-xdg",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "mimetypes, mimeheads and mimenotes from xdg/shared-mime-info",
   "keywords": [
     "mime",
@@ -30,6 +30,24 @@
     "notes",
     "types"
   ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.js"
+    },
+    "./heads": {
+      "types": "./heads/index.d.ts",
+      "import": "./heads/index.mjs",
+      "require": "./heads/index.js"
+    },
+    "./notes": {
+      "types": "./notes/index.d.ts",
+      "import": "./notes/index.mjs",
+      "require": "./notes/index.js"
+    }
+  },
   "scripts": {
     "data": "cd ./__data__ && node ./index.js",
     "data:watch": "cd ./__data__ && nodemon --inspect ./index.js --watch ./index.js",

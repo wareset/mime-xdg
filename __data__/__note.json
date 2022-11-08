@@ -473,6 +473,7 @@
   "application/x-markaby": "Markaby script",
   "text/x-crystal": "Crystal source code",
   "text/crystal": "Crystal source code",
+  "text/julia": "Julia source code",
   "text/rust": "Rust source code",
   "application/x-shar": "shell archive",
   "application/x-shared-library-la": "libtool shared library",

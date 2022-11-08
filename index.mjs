@@ -9,30 +9,34 @@ import { _EXTENSIONS as e, _MIME_TYPES as i, _MIME_NAMES as t } from "./lib/mime
 
 var a = (() => {
     var a = r();
-    for (var n in e) {
-        a[n] = [];
-        for (var o = e[n], f = 0, l = 0; l < o.length; l++) a[n][f++] = i[o[l]] + "/" + t[o[l++]][o[l]];
+    for (var o in e) {
+        a[o] = [];
+        for (var f = e[o], n = 0, l = 0; l < f.length; l++) a[o][n++] = i[f[l]] + "/" + t[f[l++]][f[l]];
     }
     return a;
-})(), n = (() => {
+})(), o = (() => {
     for (var e = r(), a = i.length; a-- > 0; ) {
         e[i[a]] = r();
-        for (var n = t[a].length; n-- > 0; ) e[i[a]][t[a][n]] = !0;
+        for (var o = t[a].length; o-- > 0; ) e[i[a]][t[a][o]] = !0;
     }
     return e;
-})(), o = r => {
-    for (var e, i = "", t = "", n = "", o = "", f = (r = r.trim()).length; f-- > 0; ) {
-        if ("." === (e = r[f])) t in a && (i = t) || n in a && (i = n) || o in a && (i = o); else if ("/" === e || "\\" === e) break;
-        t = e + t, n = e.toUpperCase() + n, o = e.toLowerCase() + o;
+})(), f = r => {
+    for (var e, i = "", t = "", o = "", f = "", n = (r = r.trim()).length; n-- > 0; ) {
+        if ("." === (e = r[n])) t in a && (i = t) || o in a && (i = o) || f in a && (i = f); else if ("/" === e || "\\" === e) break;
+        t = e + t, o = e.toUpperCase() + o, f = e.toLowerCase() + f;
     }
     return i;
-}, f = r => {
-    var e = o(r);
-    if (!e) {
-        var i = r.lastIndexOf(".");
-        i > -1 && (e = r.slice(i + 1));
+}, n = r => {
+    var e = f(r);
+    if (!e) for (var i, t = "", a = (r = r.trim()).length; a-- > 0; ) {
+        if ("." === (i = r[a])) {
+            e = t;
+            break;
+        }
+        if ("/" === i || "\\" === i) break;
+        t = i + t;
     }
     return e ? "." + e : "";
-}, l = r => (r = o(r)) ? a[r][0] : r, v = r => (r = o(r)) ? a[r].slice(0) : [];
+}, l = r => (r = f(r)) ? a[r][0] : r, v = r => (r = f(r)) ? a[r].slice(0) : [];
 
-export { a as EXTENSIONS, n as MIME_TYPES, o as ext, f as extname, v as mimeList, l as mimeType };
+export { a as EXTENSIONS, o as MIME_TYPES, f as ext, n as extname, v as mimeList, l as mimeType };
