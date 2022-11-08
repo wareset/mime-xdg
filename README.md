@@ -11,18 +11,66 @@ In addition to this, there are top-level types (mime heads) and mime description
 
 All mime types and their descriptions are contained in an optimized form. Therefore, the library does not weigh so much.
 
+Library | Size** | Mimetypes | Extensions
+--- | --- | --- | ---
+`mime-db (mime-types)`  | 136.8 KB | 2279 | 1180
+`mime` | 36.6 KB | 956 | 1173
+`mime-xdg*` | 48.8 KB | 1559 | 1619
+##### * without `mime-xdg/heads` and `mime-xdg/notes`
+##### ** Minified bundle size (not gzip)
 ## Usage
 ### mimeType
-basic library with all mime types
+Basic library with all mime types
 ```js
-import { 
-  EXTENSIONS, MIME_TYPES,
-  ext, extname, 
-  mimeType, mimeList 
-} from 'mime-xdg'
+// FUNCTIONS
+import { ext, extname, mimeType, mimeList } from 'mime-xdg'
+
+/**
+  * 1. ext
+  */
+// returns the extname if it is in the EXTENSIONS or empty string
+ext('src/test.js') // => 'js'
+ext('app\\test.foobar') // => '' - empty string
+ext('test.abw.CRASHED') // => 'abw.CRASHED' - because it exists exactly in this form
+ext('test.abw.crashed') // => ''
+
+/**
+  * 2. extname
+  */
+// works the same way as 'extname' from 'node:path', but
+// returns the extname if it is in the EXTENSIONS or find it herself
+extname('/tm') // => ''
+extname('/.tm/') // => ''
+extname('/.tm/test.foobar') // => '.foobar'
+extname('test.abw.CRASHED') // => '.abw.CRASHED'
+extname('test.abw.crashed') // => '.crashed'
+
+/**
+  * 3. mimeType
+  */
+// returns the mime type or empty string
+mimeType('test.foobar') // => ''
+mimeType('test.js') // => 'text/javascript'
+mimeType('test.JS') // => 'text/javascript'
+// but, in the schema 'shared-mime-info', sometimes the register matters:
+mimeType('test.c') // => text/x-c
+mimeType('test.C') // => text/x-c++src
+// I do not know if this is right or not,
+// but I think the Linux developers know better
+
+/**
+  * 4. mimeList
+  */
+// returns an array of all mime types
+mimeList('test.js') // => ↴
+["text/javascript", "application/x-javascript", "application/javascript"]
+
+mimeList('test.foobar') // => []
 
 
 // OBJECTS
+import { EXTENSIONS, MIME_TYPES } from 'mime-xdg'
+// You can change them yourself, add, delete, or reverse the order mimetypes
 
 /**
   * 1. EXTENSIONS
@@ -30,14 +78,6 @@ import {
 console.log(EXTENSIONS)
 // EXTENSIONS equal to:
 {
-  "123": [
-    "application/vnd.lotus-1-2-3",
-    "application/x-lotus123",
-    "application/x-123",
-    "application/lotus123",
-    "application/wk1",
-    "zz-application/zz-winassoc-123"
-  ],
   "602": [
     "application/x-t602"
   ],
@@ -79,64 +119,23 @@ console.log(MIME_TYPES)
   text: { /* etc... */ },
   /* etc... */
 }
-
-// FUNCTIONS
-
-/**
-  * 3. ext
-  */
-// returns the extname if it is in the EXTENSIONS or empty string
-ext('test.js') // 'js'
-ext('test.foobar') // '' - empty string
-ext('test.abw.CRASHED') // 'abw.CRASHED' - because it exists exactly in this form
-ext('test.abw.crashed') // '' - empty string
-
-/**
-  * 4. extname
-  */
-// works the same way as 'extname' from 'node:path', but
-// returns the extname if it is in the EXTENSIONS or find it herself
-extname('test.foobar') // '.foobar'
-extname('test.abw.CRASHED') // '.abw.CRASHED'
-extname('test.abw.crashed') // '.crashed'
-
-/**
-  * 5. mimeType
-  */
-// returns the mime type or empty string
-mimeType('test.foobar') // '' - empty string
-mimeType('test.js') // 'text/javascript'
-mimeType('test.JS') // 'text/javascript'
-// but, in the schema 'shared-mime-info', sometimes the register matters:
-mimeType('test.c') // text/x-c
-mimeType('test.C') // text/x-c++src
-// I do not know if this is right or not,
-// but I think the Linux developers know better
-
-/**
-  * 6. mimeList
-  */
-// returns an array of all mime types
-mimeList('test.js')
-/*
-[
-  "text/javascript",
-  "application/x-javascript",
-  "application/javascript"
-]
-*/
-mimeList('test.foobar') // []
 ```
 
 ### mimeHead
-many mime types have their own main mime type
+Many mime types have their own main mime type
 ```js
-import { 
-  MIME_HEADS,
-  mimeHead
-} from 'mime-xdg/heads'
+// FUNCTION
+import { mimeHead } from 'mime-xdg/heads'
+
+/**
+  * 2. mimeHead
+  */
+// returns main mime type or empty string
+mimeHead('foobar') // => '' - empty string
+mimeHead('text/javascript') // => 'application/ecmascript'
 
 // OBJECT
+import {  MIME_HEADS } from 'mime-xdg/heads'
 
 /**
   * 1. MIME_HEADS
@@ -150,27 +149,22 @@ console.log(MIME_HEADS)
   "video/x-theora": "video/ogg",
   /* etc... */
 }
-
-// FUNCTION
-
-/**
-  * 2. mimeHead
-  */
-// returns main mime type or empty string
-mimeHead('foobar') // '' - empty string
-mimeHead('text/javascript') // 'application/ecmascript'
 ```
 
 ### mimeNote
 some mime types have a short description
 ```js
-import { 
-  MIME_NOTES,
-  mimeNote
-} from 'mime-xdg/notes'
+// FUNCTION
+import { MIME_NOTES, mimeNote } from 'mime-xdg/notes'
+/**
+  * 1. mimeNote
+  */
+// returns note or empty string
+mimeNote('foobar') // => '' - empty string
+mimeNote('text/javascript') // => 'JavaScript program'
 
 // OBJECT
-
+import { MIME_NOTES } from 'mime-xdg/notes'
 /**
   * 1. MIME_NOTES
   */
@@ -183,15 +177,6 @@ console.log(MIME_NOTES)
   "font/woff": "WOFF font",
   /* etc... */
 }
-
-// FUNCTION
-
-/**
-  * 2. mimeNote
-  */
-// returns note or empty string
-mimeNote('foobar') // '' - empty string
-mimeNote('text/javascript') // 'JavaScript program'
 ```
 
 ## License
