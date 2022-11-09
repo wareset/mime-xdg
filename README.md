@@ -160,7 +160,7 @@ console.log(MIME_HEADS)
 some mime types have a short description
 ```js
 // FUNCTION
-import { MIME_NOTES, mimeNote } from 'mime-xdg/notes'
+import { mimeNote } from 'mime-xdg/notes'
 /**
   * 1. mimeNote
   */

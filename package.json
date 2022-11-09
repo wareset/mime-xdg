@@ -1,6 +1,6 @@
 {
   "name": "mime-xdg",
-  "version": "1.1.0",
+  "version": "1.1.4",
   "description": "mimetypes, mimeheads and mimenotes from xdg/shared-mime-info",
   "keywords": [
     "mime",
@@ -22,13 +22,13 @@
   "types": "index.d.ts",
   "files": [
     "README.md",
-    "heads",
+    "heads/**/*",
     "index.d.ts",
     "index.js",
     "index.mjs",
-    "lib",
-    "notes",
-    "types"
+    "lib/**/*",
+    "notes/**/*",
+    "types/**/*"
   ],
   "exports": {
     "./package.json": "./package.json",
