@@ -1,3 +1,3 @@
-import { TypeNotes } from './lib/notes';
+import type { TypeNotes } from './_includes/notes';
 export declare const MIME_NOTES: TypeNotes;
-export declare const mimeNote: (mime: string) => string;
+export declare function mimeNote(mime: string): string;

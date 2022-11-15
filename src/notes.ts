@@ -1,9 +1,10 @@
-import { createObject } from './lib'
-import { _NOTES_LIST, _NOTES_DATA, TypeNotes } from './lib/notes'
-import { _MIME_TYPES, _MIME_NAMES } from './lib/mimes'
+import type { TypeNotes } from './_includes/notes'
 
-export const MIME_NOTES = ((): TypeNotes => {
-  const res = createObject() as TypeNotes
+import { _NOTES_LIST, _NOTES_DATA } from './_includes/notes'
+import { _MIME_TYPES, _MIME_NAMES } from './_includes/mimes'
+
+export const MIME_NOTES = (function(): TypeNotes {
+  const res = Object.create(null) as TypeNotes
 
   for (let i = _NOTES_DATA.length; i--;) {
     for (let c: any, j = _NOTES_DATA[i].length; j--;) {
@@ -17,6 +18,7 @@ export const MIME_NOTES = ((): TypeNotes => {
   return res
 })()
 
-export const mimeNote = (mime: string): string =>
+export function mimeNote(mime: string): string {
   // @ts-ignore
-  MIME_NOTES[mime] || ''
+  return MIME_NOTES[mime] || ''
+}

@@ -1,6 +1,6 @@
 // import * as mimeXDG from 'mime-xdg'
 // export default mimeXDG
-// 48.8 KB
+// 48.7 KB
 // EXTS 1619
 // MIMES 1559
 

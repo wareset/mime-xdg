@@ -1,3 +1,3 @@
-import { TypeHeads } from './lib/heads';
+import type { TypeHeads } from './_includes/heads';
 export declare const MIME_HEADS: TypeHeads;
-export declare const mimeHead: (mime: string) => string;
+export declare function mimeHead(mime: string): string;

@@ -1,12 +1,13 @@
-import { createObject } from './lib'
-import { _EXTENSIONS, TypeExtnames } from './lib/mimes'
-import { _MIME_TYPES, _MIME_NAMES } from './lib/mimes'
+import type { TypeExtnames } from './_includes/mimes'
+
+import { _EXTENSIONS } from './_includes/mimes'
+import { _MIME_TYPES, _MIME_NAMES } from './_includes/mimes'
 
 // export const EXTNAMES = {} as Readonly<{ [K in keyof typeof EXTENSIONS]?: string[] }>
 // export const EXTNAMES = {} as Readonly<Record<keyof typeof EXTENSIONS, string[]>>
 
-export const EXTENSIONS = ((): TypeExtnames => {
-  const res = createObject() as TypeExtnames
+export const EXTENSIONS = (function(): TypeExtnames {
+  const res = Object.create(null) as TypeExtnames
 
   for (const ext in _EXTENSIONS) {
     // @ts-ignore
@@ -17,25 +18,53 @@ export const EXTENSIONS = ((): TypeExtnames => {
       res[ext][j++] = _MIME_TYPES[a[i]] + '/' + _MIME_NAMES[a[i++]][a[i]]
     }
   }
-
   return res
 })()
 
-export const MIME_TYPES = (() => {
+// TODO: Is this object even needed?
+/*
+/**
+  * 2. MIME_TYPES
+  * /
+ console.log(MIME_TYPES)
+ // MIME_TYPES equal to:
+ {
+   application: {
+     "x-riff": true,
+     "x-matroska": true,
+     "x-iff": true,
+     "x-ole-storage": true,
+     /* etc... * /
+   },
+   audio: {
+     "tta": true,
+     "x-tta": true,
+     "x-xi": true,
+     "x-voc": true,
+     /* etc... * /
+   },
+   font: { /* etc... * / },
+   image: { /* etc... * / },
+   text: { /* etc... * / },
+   /* etc... * /
+ }
+
+export const MIME_TYPES = (function() {
   const res =
-    createObject() as { [K in typeof _MIME_TYPES[number]]: { [key: string]: true } }
+    Object.create(null) as { [K in typeof _MIME_TYPES[number]]: { [key: string]: true } }
   
   for (let i = _MIME_TYPES.length; i-- > 0;) {
-    res[_MIME_TYPES[i]] = createObject()
+    res[_MIME_TYPES[i]] = Object.create(null)
     for (let j = _MIME_NAMES[i].length; j-- > 0;) {
       res[_MIME_TYPES[i]][_MIME_NAMES[i][j]] = true
     }
   }
-
   return res
 })()
 
-export const ext = (file: string): keyof TypeExtnames | '' => {
+*/
+
+export function ext(file: string): keyof TypeExtnames | '' {
   file = file.trim()
   let res = '' as any
   for (let c: string, s = '', su = '', sl = '', i = file.length; i-- > 0;) {
@@ -48,7 +77,7 @@ export const ext = (file: string): keyof TypeExtnames | '' => {
   return res
 }
 
-export const extname = (file: string): string => {
+export function extname(file: string): string {
   let res: string = ext(file)
   if (!res) {
     file = file.trim()
@@ -61,10 +90,12 @@ export const extname = (file: string): string => {
   return res ? '.' + res : ''
 }
 
-export const mimeType = (filepath: string): string =>
+export function mimeType(filepath: string): string {
   // @ts-ignore
-  (filepath = ext(filepath)) ? EXTENSIONS[filepath][0] : filepath
+  return (filepath = ext(filepath)) ? EXTENSIONS[filepath][0] : filepath
+}
 
-export const mimeList = (filepath: string): string[] =>
+export function mimeList(filepath: string): string[] {
   // @ts-ignore
-  (filepath = ext(filepath)) ? EXTENSIONS[filepath].slice(0) : []
+  return (filepath = ext(filepath)) ? EXTENSIONS[filepath].slice(0) : []
+}

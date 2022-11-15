@@ -15,7 +15,7 @@ Library | Size** | Mimetypes | Extensions
 --- | --- | --- | ---
 `mime-db (mime-types)`  | 136.8 KB | 2279 | 1180
 `mime` | 36.6 KB | 956 | 1173
-`mime-xdg*` | 48.8 KB | 1559 | 1619
+`mime-xdg*` | 48.7 KB | 1559 | 1619
 
 
 \* without `mime-xdg/heads` and `mime-xdg/notes`
@@ -55,8 +55,10 @@ extname('test.abw.crashed') // => '.crashed'
   */
 // returns the mime type or empty string
 mimeType('test.foobar') // => ''
-mimeType('test.js') // => 'text/javascript'
-mimeType('test.JS') // => 'text/javascript'
+mimeType('/.js/js') // => ''
+mimeType('src/test.js') // => 'text/javascript'
+mimeType('src\\test.JS') // => 'text/javascript'
+mimeType('foobar/.pdf') // => 'application/pdf'
 // but, in the schema 'shared-mime-info', sometimes the register matters:
 mimeType('test.c') // => text/x-c
 mimeType('test.C') // => text/x-c++src
@@ -67,14 +69,16 @@ mimeType('test.C') // => text/x-c++src
   * 4. mimeList
   */
 // returns an array of all mime types
-mimeList('test.js') // => ↴
+mimeList('src/test.js') // => ↴
 ["text/javascript", "application/x-javascript", "application/javascript"]
-
+// This is a copy from EXTENSIONS. It can be safely changed
+mimeList('.jpg') // => ↴
+mimeList('.jpeg') // => ↴
+['image/jpeg', 'image/pjpeg']
 mimeList('test.foobar') // => []
 
-
 // OBJECTS
-import { EXTENSIONS, MIME_TYPES } from 'mime-xdg'
+import { EXTENSIONS } from 'mime-xdg'
 // You can change them yourself, add, delete, or reverse the order mimetypes
 
 /**
@@ -98,32 +102,6 @@ console.log(EXTENSIONS)
   ],
   /* etc... */
 }
-
-/**
-  * 2. MIME_TYPES
-  */
-console.log(MIME_TYPES)
-// MIME_TYPES equal to:
-{
-  application: {
-    "x-riff": true,
-    "x-matroska": true,
-    "x-iff": true,
-    "x-ole-storage": true,
-    /* etc... */
-  },
-  audio: {
-    "tta": true,
-    "x-tta": true,
-    "x-xi": true,
-    "x-voc": true,
-    /* etc... */
-  },
-  font: { /* etc... */ },
-  image: { /* etc... */ },
-  text: { /* etc... */ },
-  /* etc... */
-}
 ```
 
 ### mimeHead
@@ -133,11 +111,13 @@ Many mime types have their own main mime type
 import { mimeHead } from 'mime-xdg/heads'
 
 /**
-  * 2. mimeHead
+  * 1. mimeHead
   */
 // returns main mime type or empty string
 mimeHead('foobar') // => '' - empty string
 mimeHead('text/javascript') // => 'application/ecmascript'
+mimeHead(mimeType('.c')) // => 'text/plain'
+
 
 // OBJECT
 import {  MIME_HEADS } from 'mime-xdg/heads'
@@ -167,6 +147,8 @@ import { mimeNote } from 'mime-xdg/notes'
 // returns note or empty string
 mimeNote('foobar') // => '' - empty string
 mimeNote('text/javascript') // => 'JavaScript program'
+mimeNote(mimeType('.pdf')) // => 'PDF document'
+
 
 // OBJECT
 import { MIME_NOTES } from 'mime-xdg/notes'

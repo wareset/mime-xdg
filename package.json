@@ -1,6 +1,6 @@
 {
   "name": "mime-xdg",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "mimetypes, mimeheads and mimenotes from xdg/shared-mime-info",
   "keywords": [
     "mime",
@@ -19,48 +19,47 @@
   "author": "rease <cftcview@gmail.com>",
   "main": "index",
   "module": "index.mjs",
-  "types": "index.d.ts",
+  "types": "types/index.d.ts",
   "files": [
     "README.md",
+    "_includes/**/*",
     "heads/**/*",
     "index.d.ts",
     "index.js",
     "index.mjs",
-    "lib/**/*",
     "notes/**/*",
     "types/**/*"
   ],
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "types": "./index.d.ts",
       "import": "./index.mjs",
-      "require": "./index.js"
+      "require": "./index.js",
+      "types": "./types/index.d.ts"
     },
     "./heads": {
-      "types": "./heads/index.d.ts",
       "import": "./heads/index.mjs",
-      "require": "./heads/index.js"
+      "require": "./heads/index.js",
+      "types": "./types/heads.d.ts"
     },
     "./notes": {
-      "types": "./notes/index.d.ts",
       "import": "./notes/index.mjs",
-      "require": "./notes/index.js"
+      "require": "./notes/index.js",
+      "types": "./types/notes.d.ts"
     }
   },
   "scripts": {
     "data": "cd ./__data__ && node ./index.js",
     "data:watch": "cd ./__data__ && nodemon --inspect ./index.js --watch ./index.js",
-    "dester": "dester ./src ./ -t types",
-    "build": "npm run data && npm run -s dester -- -r -m",
-    "dev": "npm run -s dester -- -w --no-r"
+    "build": "npm run data && dester --ie -m",
+    "dev": "dester --ie -wm"
   },
   "devDependencies": {
-    "dester": "0.x",
-    "typescript": "4.x",
+    "@types/sax": "1.2.4",
+    "dester": "1.0.x",
     "nodemon": "^2.0.0",
     "sax": "1.2.4",
-    "@types/sax": "1.2.4",
+    "typescript": "^4.8.4",
     "xdg--shared-mime-info": "git+https://gitlab.freedesktop.org/xdg/shared-mime-info.git"
   }
 }

@@ -1,9 +1,10 @@
-import { createObject } from './lib'
-import { _HEADS_DATA, TypeHeads } from './lib/heads'
-import { _MIME_TYPES, _MIME_NAMES } from './lib/mimes'
+import type { TypeHeads } from './_includes/heads'
 
-export const MIME_HEADS = ((): TypeHeads => {
-  const res = createObject() as TypeHeads
+import { _HEADS_DATA } from './_includes/heads'
+import { _MIME_TYPES, _MIME_NAMES } from './_includes/mimes'
+
+export const MIME_HEADS = (function(): TypeHeads {
+  const res = Object.create(null) as TypeHeads
 
   for (let mimeArr: [number, number], i = _HEADS_DATA.length; i--;) {
     for (let j in _HEADS_DATA[i]) {
@@ -18,6 +19,7 @@ export const MIME_HEADS = ((): TypeHeads => {
   return res
 })()
 
-export const mimeHead = (mime: string): string =>
+export function mimeHead(mime: string): string {
   // @ts-ignore
-  MIME_HEADS[mime] || ''
+  return MIME_HEADS[mime] || ''
+}
