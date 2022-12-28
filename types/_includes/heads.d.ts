@@ -26,10 +26,6 @@ export declare const _HEADS_DATA: readonly [{
     readonly 71: readonly [0, 999];
     readonly 72: readonly [0, 69];
     readonly 83: readonly [0, 716];
-    readonly 89: readonly [3, 1];
-    readonly 90: readonly [3, 1];
-    readonly 91: readonly [3, 1];
-    readonly 92: readonly [3, 1];
     readonly 96: readonly [3, 1];
     readonly 105: readonly [3, 1];
     readonly 110: readonly [0, 706];
@@ -545,10 +541,6 @@ export declare type TypeHeads = {
     "application/xspf+xml": "application/xml";
     "application/x-xspf+xml": "application/xml";
     "application/x-windows-themepack": "application/vnd.ms-cab-compressed";
-    "application/pgp-encrypted": "text/plain";
-    "application/pgp": "text/plain";
-    "application/pgp-keys": "text/plain";
-    "application/pgp-signature": "text/plain";
     "application/pkcs7-signature": "text/plain";
     "application/postscript": "text/plain";
     "application/raml+yaml": "application/x-yaml";
