@@ -77,7 +77,8 @@
     "application/exi"
   ],
   "pfr": [
-    "application/font-tdpfr"
+    "application/font-tdpfr",
+    "application/vnd.truedoc"
   ],
   "gml": [
     "application/gml+xml"
@@ -105,8 +106,8 @@
   ],
   "jar": [
     "application/java-archive",
-    "application/x-java-archive",
-    "application/x-jar"
+    "application/x-jar",
+    "application/x-java-archive"
   ],
   "ser": [
     "application/java-serialized-object"
@@ -370,7 +371,9 @@
   ],
   "gbr": [
     "application/rpki-ghostbusters",
-    "image/x-gimp-gbr"
+    "image/x-gimp-gbr",
+    "application/vnd.gerber",
+    "application/x-gerber"
   ],
   "mft": [
     "application/rpki-manifest"
@@ -813,6 +816,9 @@
   ],
   "ggb": [
     "application/vnd.geogebra.file"
+  ],
+  "ggs": [
+    "application/vnd.geogebra.slides"
   ],
   "ggt": [
     "application/vnd.geogebra.tool"
@@ -1452,6 +1458,7 @@
   ],
   "pdb": [
     "application/vnd.palm",
+    "application/x-ms-pdb",
     "application/x-aportisdoc",
     "application/x-palm-database"
   ],
@@ -1824,6 +1831,9 @@
   "vxml": [
     "application/voicexml+xml"
   ],
+  "wasm": [
+    "application/wasm"
+  ],
   "wgt": [
     "application/widget"
   ],
@@ -1881,13 +1891,10 @@
     "application/x-blorb"
   ],
   "bz": [
-    "application/x-bzip",
-    "application/x-bzip2",
-    "application/bzip2"
+    "application/x-bzip"
   ],
   "bz2": [
     "application/x-bzip2",
-    "application/x-bzip",
     "application/bzip2"
   ],
   "boz": [
@@ -2076,6 +2083,7 @@
     "application/x-wia",
     "application/x-gamecube-rom",
     "application/x-gamecube-iso-image",
+    "application/vnd.efi.iso",
     "application/x-cd-image"
   ],
   "jnlp": [
@@ -2128,7 +2136,8 @@
     "application/vnd.msaccess",
     "application/mdb",
     "application/x-mdb",
-    "zz-application/zz-winassoc-mdb"
+    "zz-application/zz-winassoc-mdb",
+    "application/x-lmdb"
   ],
   "obd": [
     "application/x-msbinder"
@@ -2150,7 +2159,9 @@
     "application/x-msdownload"
   ],
   "bat": [
-    "application/x-msdownload"
+    "application/x-msdownload",
+    "application/x-bat",
+    "application/bat"
   ],
   "msi": [
     "application/x-msdownload",
@@ -2260,7 +2271,8 @@
     "application/x-sit"
   ],
   "sitx": [
-    "application/x-stuffitx"
+    "application/x-stuffitx",
+    "application/x-sitx"
   ],
   "srt": [
     "application/x-subrip",
@@ -2629,8 +2641,8 @@
   ],
   "wav": [
     "audio/x-wav",
-    "audio/wav",
-    "audio/vnd.wave"
+    "audio/vnd.wave",
+    "audio/wav"
   ],
   "xm": [
     "audio/xm",
@@ -2707,7 +2719,9 @@
     "image/ktx"
   ],
   "png": [
-    "image/png"
+    "image/png",
+    "image/apng",
+    "image/vnd.mozilla.apng"
   ],
   "btif": [
     "image/prs.btif"
@@ -2794,7 +2808,8 @@
     "image/vnd.ms-modi"
   ],
   "wdp": [
-    "image/vnd.ms-photo"
+    "image/vnd.ms-photo",
+    "image/jxr"
   ],
   "npx": [
     "image/vnd.net-fpx"
@@ -3423,6 +3438,7 @@
   ],
   "avi": [
     "video/x-msvideo",
+    "video/vnd.avi",
     "video/x-avi",
     "video/avi",
     "video/divx",
@@ -3507,6 +3523,9 @@
   "siv": [
     "application/sieve"
   ],
+  "sieve": [
+    "application/sieve"
+  ],
   "sml": [
     "application/smil+xml",
     "application/smil"
@@ -3523,10 +3542,12 @@
     "application/x-sqlite3"
   ],
   "ged": [
+    "text/vnd.familysearch.gedcom",
     "application/x-gedcom",
     "text/gedcom"
   ],
   "gedcom": [
+    "text/vnd.familysearch.gedcom",
     "application/x-gedcom",
     "text/gedcom"
   ],
@@ -3562,11 +3583,13 @@
     "application/toml"
   ],
   "yaml": [
+    "application/yaml",
     "application/x-yaml",
     "text/yaml",
     "text/x-yaml"
   ],
   "yml": [
+    "application/yaml",
     "application/x-yaml",
     "text/yaml",
     "text/x-yaml"
@@ -3604,6 +3627,9 @@
     "application/lotus123",
     "application/wk1",
     "zz-application/zz-winassoc-123"
+  ],
+  "lmdb": [
+    "application/x-lmdb"
   ],
   "xll": [
     "application/vnd.ms-excel",
@@ -3771,20 +3797,29 @@
   "dvi.bz2": [
     "application/x-bzdvi"
   ],
-  "tar.bz2": [
-    "application/x-bzip-compressed-tar"
-  ],
   "tar.bz": [
-    "application/x-bzip-compressed-tar"
-  ],
-  "tbz2": [
     "application/x-bzip-compressed-tar"
   ],
   "tbz": [
     "application/x-bzip-compressed-tar"
   ],
+  "tar.bz2": [
+    "application/x-bzip2-compressed-tar"
+  ],
+  "tbz2": [
+    "application/x-bzip2-compressed-tar"
+  ],
   "tb2": [
-    "application/x-bzip-compressed-tar"
+    "application/x-bzip2-compressed-tar"
+  ],
+  "bz3": [
+    "application/x-bzip3"
+  ],
+  "tar.bz3": [
+    "application/x-bzip3-compressed-tar"
+  ],
+  "tbz3": [
+    "application/x-bzip3-compressed-tar"
   ],
   "pdf.bz2": [
     "application/x-bzpdf"
@@ -3802,9 +3837,11 @@
     "application/x-lrzip-compressed-tar"
   ],
   "raw-disk-image": [
+    "application/vnd.efi.img",
     "application/x-raw-disk-image"
   ],
   "img": [
+    "application/vnd.efi.img",
     "application/x-raw-disk-image"
   ],
   "fd": [
@@ -3822,6 +3859,7 @@
     "application/x-raw-disk-image-xz-compressed"
   ],
   "iso9660": [
+    "application/vnd.efi.iso",
     "application/x-cd-image",
     "application/x-iso9660-image"
   ],
@@ -3854,10 +3892,11 @@
     "application/x-cpio-compressed"
   ],
   "dbf": [
-    "application/x-dbf",
-    "application/x-dbase",
+    "application/vnd.dbf",
+    "application/dbase",
     "application/dbf",
-    "application/dbase"
+    "application/x-dbase",
+    "application/x-dbf"
   ],
   "es": [
     "application/ecmascript",
@@ -4369,6 +4408,14 @@
   "la": [
     "application/x-shared-library-la"
   ],
+  "fish": [
+    "application/x-fishscript",
+    "text/x-fish"
+  ],
+  "nu": [
+    "application/x-nuscript",
+    "text/x-nu"
+  ],
   "shn": [
     "application/x-shorten",
     "audio/x-shorten"
@@ -4485,6 +4532,9 @@
   "txz": [
     "application/x-xz-compressed-tar"
   ],
+  "zpaq": [
+    "application/x-zpaq"
+  ],
   "zst": [
     "application/zstd"
   ],
@@ -4553,6 +4603,9 @@
   ],
   "aax": [
     "audio/vnd.audible.aax"
+  ],
+  "aaxc": [
+    "audio/vnd.audible.aaxc"
   ],
   "dff": [
     "audio/x-dff",
@@ -4850,11 +4903,23 @@
   "arw": [
     "image/x-sony-arw"
   ],
+  "apng": [
+    "image/apng",
+    "image/vnd.mozilla.apng"
+  ],
   "rle": [
     "image/rle"
   ],
   "svg.gz": [
     "image/svg+xml-compressed"
+  ],
+  "jxr": [
+    "image/jxr",
+    "image/vnd.ms-photo"
+  ],
+  "hdp": [
+    "image/jxr",
+    "image/vnd.ms-photo"
   ],
   "ag": [
     "image/x-applix-graphics"
@@ -5070,6 +5135,9 @@
   "bib": [
     "text/x-bibtex"
   ],
+  "blp": [
+    "text/x-blueprint"
+  ],
   "hp": [
     "text/x-c++hdr"
   ],
@@ -5243,6 +5311,15 @@
     "text/x-patch",
     "text/x-diff"
   ],
+  "nim": [
+    "text/x-nim"
+  ],
+  "nims": [
+    "text/x-nimscript"
+  ],
+  "nimble": [
+    "text/x-nimscript"
+  ],
   "go": [
     "text/x-go"
   ],
@@ -5309,6 +5386,9 @@
   "ins": [
     "text/x-tex",
     "application/x-tex"
+  ],
+  "typ": [
+    "text/x-typst"
   ],
   "twig": [
     "text/x-twig"
@@ -5444,20 +5524,22 @@
     "application/vnd.haansoft-hwt"
   ],
   "avf": [
-    "video/x-msvideo",
+    "video/vnd.avi",
     "video/x-avi",
     "video/avi",
     "video/divx",
     "video/msvideo",
-    "video/vnd.divx"
+    "video/vnd.divx",
+    "video/x-msvideo"
   ],
   "divx": [
-    "video/x-msvideo",
+    "video/vnd.avi",
     "video/x-avi",
     "video/avi",
     "video/divx",
     "video/msvideo",
-    "video/vnd.divx"
+    "video/vnd.divx",
+    "video/x-msvideo"
   ],
   "nsv": [
     "video/x-nsv"
@@ -5603,6 +5685,9 @@
     "image/avif",
     "image/avif-sequence"
   ],
+  "qoi": [
+    "image/qoi"
+  ],
   "bik": [
     "video/vnd.radgamettools.bink"
   ],
@@ -5617,5 +5702,32 @@
   ],
   "qs": [
     "application/sparql-query"
+  ],
+  "openvpn": [
+    "application/x-openvpn-profile"
+  ],
+  "ovpn": [
+    "application/x-openvpn-profile"
+  ],
+  "mrpack": [
+    "application/x-modrinth-modpack+zip"
+  ],
+  "cbor": [
+    "application/cbor"
+  ],
+  "eris": [
+    "application/x-eris-link+cbor"
+  ],
+  "gbrjob": [
+    "application/x-gerber-job"
+  ],
+  "drl": [
+    "application/x-excellon"
+  ],
+  "tmx": [
+    "application/x-tiled-tmx"
+  ],
+  "tsx": [
+    "application/x-tiled-tsx"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "mime-xdg",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "description": "mimetypes, mimeheads and mimenotes from xdg/shared-mime-info",
   "keywords": [
     "mime",
