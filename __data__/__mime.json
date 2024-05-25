@@ -206,7 +206,8 @@
     "application/octet-stream"
   ],
   "lrf": [
-    "application/octet-stream"
+    "application/octet-stream",
+    "application/x-sony-bbeb"
   ],
   "mar": [
     "application/octet-stream"
@@ -409,9 +410,9 @@
   ],
   "sdp": [
     "application/sdp",
+    "application/vnd.stardivision.impress-packed",
     "application/x-sdp",
-    "application/vnd.sdp",
-    "application/vnd.stardivision.impress"
+    "application/vnd.sdp"
   ],
   "setpay": [
     "application/set-payment-initiation"
@@ -1369,6 +1370,7 @@
   ],
   "odb": [
     "application/vnd.oasis.opendocument.database",
+    "application/vnd.oasis.opendocument.base",
     "application/vnd.sun.xml.base"
   ],
   "odf": [
@@ -1460,6 +1462,7 @@
     "application/vnd.palm",
     "application/x-ms-pdb",
     "application/x-aportisdoc",
+    "chemical/x-pdb",
     "application/x-palm-database"
   ],
   "pqa": [
@@ -1600,28 +1603,32 @@
     "application/vnd.spotfire.sfs"
   ],
   "sdc": [
-    "application/vnd.stardivision.calc"
+    "application/vnd.stardivision.calc",
+    "application/x-starcalc"
   ],
   "sda": [
-    "application/vnd.stardivision.draw"
+    "application/vnd.stardivision.draw",
+    "application/x-stardraw"
   ],
   "sdd": [
-    "application/vnd.stardivision.impress"
+    "application/vnd.stardivision.impress",
+    "application/x-starimpress"
   ],
   "smf": [
-    "application/vnd.stardivision.math"
+    "application/vnd.stardivision.math",
+    "application/x-starmath"
   ],
   "sdw": [
     "application/vnd.stardivision.writer",
-    "application/vnd.stardivision.writer-global"
+    "application/x-starwriter"
   ],
   "vor": [
     "application/vnd.stardivision.writer",
-    "application/vnd.stardivision.writer-global"
+    "application/x-starwriter"
   ],
   "sgl": [
     "application/vnd.stardivision.writer-global",
-    "application/vnd.stardivision.writer"
+    "application/x-starwriter-global"
   ],
   "smzip": [
     "application/vnd.stepmania.package"
@@ -1891,11 +1898,13 @@
     "application/x-blorb"
   ],
   "bz": [
-    "application/x-bzip"
+    "application/x-bzip",
+    "application/x-bzip1"
   ],
   "bz2": [
     "application/x-bzip2",
-    "application/bzip2"
+    "application/bzip2",
+    "application/x-bzip"
   ],
   "boz": [
     "application/x-bzip2"
@@ -2117,7 +2126,8 @@
     "application/x-ms-application"
   ],
   "lnk": [
-    "application/x-ms-shortcut"
+    "application/x-ms-shortcut",
+    "application/x-win-lnk"
   ],
   "wmd": [
     "application/x-ms-wmd"
@@ -2150,10 +2160,16 @@
   ],
   "exe": [
     "application/x-msdownload",
-    "application/x-ms-dos-executable"
+    "application/x-dosexec",
+    "application/x-ms-dos-executable",
+    "application/x-ms-ne-executable",
+    "application/vnd.microsoft.portable-executable"
   ],
   "dll": [
-    "application/x-msdownload"
+    "application/x-msdownload",
+    "application/x-ms-dos-executable",
+    "application/x-ms-ne-executable",
+    "application/vnd.microsoft.portable-executable"
   ],
   "com": [
     "application/x-msdownload"
@@ -2316,7 +2332,8 @@
   ],
   "obj": [
     "application/x-tgif",
-    "model/obj"
+    "model/obj",
+    "application/prs.wavefront-obj"
   ],
   "ustar": [
     "application/x-ustar"
@@ -2939,10 +2956,6 @@
   "gtw": [
     "model/vnd.gtw"
   ],
-  "mts": [
-    "model/vnd.mts",
-    "video/mp2t"
-  ],
   "vtu": [
     "model/vnd.vtu"
   ],
@@ -3000,12 +3013,14 @@
   "js": [
     "text/javascript",
     "application/x-javascript",
-    "application/javascript"
+    "application/javascript",
+    "text/jscript"
   ],
   "mjs": [
     "text/javascript",
     "application/x-javascript",
-    "application/javascript"
+    "application/javascript",
+    "text/jscript"
   ],
   "n3": [
     "text/n3"
@@ -3250,6 +3265,21 @@
   ],
   "mjp2": [
     "video/mj2"
+  ],
+  "ts": [
+    "video/mp2t",
+    "text/vnd.trolltech.linguist",
+    "application/x-linguist",
+    "text/vnd.qt.linguist"
+  ],
+  "m2t": [
+    "video/mp2t"
+  ],
+  "m2ts": [
+    "video/mp2t"
+  ],
+  "mts": [
+    "video/mp2t"
   ],
   "mp4": [
     "video/mp4",
@@ -3575,6 +3605,9 @@
   "gd": [
     "application/x-gdscript"
   ],
+  "its": [
+    "application/its+xml"
+  ],
   "xliff": [
     "application/xliff+xml",
     "application/x-xliff"
@@ -3682,14 +3715,21 @@
     "application/ms-tnef"
   ],
   "sds": [
+    "application/x-starchart",
     "application/vnd.stardivision.chart"
   ],
   "smd": [
-    "application/vnd.stardivision.mail",
+    "application/x-starmail",
     "application/x-genesis-rom"
+  ],
+  "sdm": [
+    "application/vnd.stardivision.mail"
   ],
   "fodt": [
     "application/vnd.oasis.opendocument.text-flat-xml"
+  ],
+  "otm": [
+    "application/vnd.oasis.opendocument.text-master-template"
   ],
   "fodg": [
     "application/vnd.oasis.opendocument.graphics-flat-xml"
@@ -3699,6 +3739,10 @@
   ],
   "fods": [
     "application/vnd.oasis.opendocument.spreadsheet-flat-xml"
+  ],
+  "parquet": [
+    "application/vnd.apache.parquet",
+    "application/x-parquet"
   ],
   "wp": [
     "application/vnd.wordperfect",
@@ -3764,6 +3808,9 @@
   "pdc": [
     "application/x-aportisdoc"
   ],
+  "brk": [
+    "chemical/x-pdb"
+  ],
   "as": [
     "application/x-applix-spreadsheet"
   ],
@@ -3798,19 +3845,22 @@
     "application/x-bzdvi"
   ],
   "tar.bz": [
-    "application/x-bzip-compressed-tar"
+    "application/x-bzip1-compressed-tar"
   ],
   "tbz": [
-    "application/x-bzip-compressed-tar"
+    "application/x-bzip1-compressed-tar"
   ],
   "tar.bz2": [
-    "application/x-bzip2-compressed-tar"
+    "application/x-bzip2-compressed-tar",
+    "application/x-bzip-compressed-tar"
   ],
   "tbz2": [
-    "application/x-bzip2-compressed-tar"
+    "application/x-bzip2-compressed-tar",
+    "application/x-bzip-compressed-tar"
   ],
   "tb2": [
-    "application/x-bzip2-compressed-tar"
+    "application/x-bzip2-compressed-tar",
+    "application/x-bzip-compressed-tar"
   ],
   "bz3": [
     "application/x-bzip3"
@@ -3826,6 +3876,15 @@
   ],
   "ps.bz2": [
     "application/x-bzpostscript"
+  ],
+  "rz": [
+    "application/x-rzip"
+  ],
+  "tar.rz": [
+    "application/x-rzip-compressed-tar"
+  ],
+  "trz": [
+    "application/x-rzip-compressed-tar"
   ],
   "lrz": [
     "application/x-lrzip"
@@ -3913,6 +3972,10 @@
   ],
   "3dsx": [
     "application/x-nintendo-3ds-executable"
+  ],
+  "xci": [
+    "application/x-nintendo-switch-xci",
+    "application/x-nx-xci"
   ],
   "pce": [
     "application/x-pc-engine-rom"
@@ -4011,9 +4074,15 @@
     "application/x-gba-rom"
   ],
   "vb": [
-    "application/x-virtual-boy-rom"
+    "application/x-virtual-boy-rom",
+    "text/x-vb"
   ],
   "gen": [
+    "application/x-genesis-rom"
+  ],
+  "md": [
+    "text/markdown",
+    "text/x-markdown",
     "application/x-genesis-rom"
   ],
   "sgd": [
@@ -4111,7 +4180,14 @@
   "jsm": [
     "text/javascript",
     "application/x-javascript",
-    "application/javascript"
+    "application/javascript",
+    "text/jscript"
+  ],
+  "jse": [
+    "text/jscript.encode"
+  ],
+  "json5": [
+    "application/json5"
   ],
   "jrd": [
     "application/jrd+json"
@@ -4165,12 +4241,6 @@
   "lhz": [
     "application/x-lhz"
   ],
-  "ts": [
-    "text/vnd.trolltech.linguist",
-    "application/x-linguist",
-    "text/vnd.qt.linguist",
-    "video/mp2t"
-  ],
   "lyx": [
     "application/x-lyx",
     "text/x-lyx"
@@ -4222,6 +4292,39 @@
   ],
   "cob": [
     "text/x-cobol"
+  ],
+  "cpl": [
+    "application/x-msdownload",
+    "application/x-ms-dos-executable",
+    "application/x-ms-ne-executable",
+    "application/vnd.microsoft.portable-executable"
+  ],
+  "drv": [
+    "application/x-msdownload",
+    "application/x-ms-dos-executable",
+    "application/x-ms-ne-executable",
+    "application/vnd.microsoft.portable-executable"
+  ],
+  "scr": [
+    "application/x-msdownload",
+    "application/x-ms-dos-executable",
+    "application/x-ms-ne-executable",
+    "application/vnd.microsoft.portable-executable"
+  ],
+  "efi": [
+    "application/vnd.microsoft.portable-executable"
+  ],
+  "ocx": [
+    "application/vnd.microsoft.portable-executable"
+  ],
+  "sys": [
+    "application/vnd.microsoft.portable-executable"
+  ],
+  "lib": [
+    "application/vnd.microsoft.portable-executable"
+  ],
+  "ps1": [
+    "application/x-powershell"
   ],
   "url": [
     "application/x-mswinurl"
@@ -4281,6 +4384,30 @@
   "ogm": [
     "video/x-ogm+ogg",
     "video/x-ogm"
+  ],
+  "qxp": [
+    "application/vnd.quark.quarkxpress"
+  ],
+  "msp": [
+    "application/microsoftpatch"
+  ],
+  "msu": [
+    "application/microsoftupdate"
+  ],
+  "appx": [
+    "application/appx"
+  ],
+  "msix": [
+    "application/msix"
+  ],
+  "appxbundle": [
+    "application/appxbundle"
+  ],
+  "msixbundle": [
+    "application/msixbundle"
+  ],
+  "appinstaller": [
+    "application/appinstaller"
   ],
   "oleo": [
     "application/x-oleo"
@@ -4362,6 +4489,9 @@
     "application/x-quattropro"
   ],
   "wb3": [
+    "application/x-quattropro"
+  ],
+  "qpw": [
     "application/x-quattropro"
   ],
   "qtl": [
@@ -4793,6 +4923,13 @@
     "image/heic-sequence",
     "image/heif-sequence"
   ],
+  "hej2": [
+    "image/hej2k"
+  ],
+  "jfif": [
+    "image/jpeg",
+    "image/pjpeg"
+  ],
   "mjpeg": [
     "video/x-mjpeg"
   ],
@@ -4943,8 +5080,8 @@
     "application/dicom"
   ],
   "docbook": [
-    "application/x-docbook+xml",
     "application/docbook+xml",
+    "application/x-docbook+xml",
     "application/vnd.oasis.docbook+xml"
   ],
   "epsi": [
@@ -5118,9 +5255,11 @@
     "application/owl+xml"
   ],
   "sylk": [
+    "application/x-sylk",
     "text/spreadsheet"
   ],
   "slk": [
+    "application/x-sylk",
     "text/spreadsheet"
   ],
   "mc2": [
@@ -5230,6 +5369,12 @@
   "feature": [
     "text/x-gherkin"
   ],
+  "hta": [
+    "application/hta"
+  ],
+  "htc": [
+    "text/x-component"
+  ],
   "manifest": [
     "text/cache-manifest"
   ],
@@ -5257,10 +5402,6 @@
   ],
   "mak": [
     "text/x-makefile"
-  ],
-  "md": [
-    "text/markdown",
-    "text/x-markdown"
   ],
   "mkd": [
     "text/markdown",
@@ -5324,23 +5465,30 @@
     "text/x-go"
   ],
   "py": [
+    "text/x-python2",
     "text/x-python",
     "text/x-python3"
   ],
   "py3": [
     "text/x-python3"
   ],
-  "py3x": [
-    "text/x-python3"
-  ],
   "pyi": [
     "text/x-python3"
   ],
-  "pyx": [
-    "text/x-python"
+  "py2": [
+    "text/x-python2"
   ],
   "wsgi": [
     "text/x-python"
+  ],
+  "pxd": [
+    "text/x-cython"
+  ],
+  "pxi": [
+    "text/x-cython"
+  ],
+  "pyx": [
+    "text/x-cython"
   ],
   "sage": [
     "text/x-sagemath"
@@ -5400,9 +5548,15 @@
     "text/x-uuencode",
     "zz-application/zz-winassoc-uu"
   ],
+  "bas": [
+    "text/x-basic"
+  ],
   "vbs": [
     "text/vbscript",
     "text/vbs"
+  ],
+  "vbe": [
+    "text/vbscript.encode"
   ],
   "xmi": [
     "text/x-xmi"
@@ -5468,12 +5622,6 @@
   ],
   "dv": [
     "video/dv"
-  ],
-  "m2t": [
-    "video/mp2t"
-  ],
-  "m2ts": [
-    "video/mp2t"
   ],
   "cpi": [
     "video/mp2t"
@@ -5618,6 +5766,12 @@
     "model/3mf",
     "application/vnd.ms-3mfdocument"
   ],
+  "step": [
+    "model/step"
+  ],
+  "stp": [
+    "model/step"
+  ],
   "gcode": [
     "text/x.gcode"
   ],
@@ -5711,6 +5865,9 @@
   ],
   "mrpack": [
     "application/x-modrinth-modpack+zip"
+  ],
+  "qbrew": [
+    "application/x-qbrew"
   ],
   "cbor": [
     "application/cbor"
