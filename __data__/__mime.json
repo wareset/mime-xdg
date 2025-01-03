@@ -1600,7 +1600,8 @@
     "application/vnd.spotfire.dxp"
   ],
   "sfs": [
-    "application/vnd.spotfire.sfs"
+    "application/vnd.spotfire.sfs",
+    "application/vnd.squashfs"
   ],
   "sdc": [
     "application/vnd.stardivision.calc",
@@ -2043,7 +2044,8 @@
     "application/x-font-type1"
   ],
   "pfm": [
-    "application/x-font-type1"
+    "application/x-font-type1",
+    "image/x-pfm"
   ],
   "afm": [
     "application/x-font-type1",
@@ -2702,6 +2704,10 @@
   "woff2": [
     "font/woff2"
   ],
+  "avif": [
+    "image/avif",
+    "image/avif-sequence"
+  ],
   "bmp": [
     "image/bmp",
     "image/x-bmp",
@@ -2731,6 +2737,9 @@
   "jpe": [
     "image/jpeg",
     "image/pjpeg"
+  ],
+  "jxl": [
+    "image/jxl"
   ],
   "ktx": [
     "image/ktx"
@@ -2810,7 +2819,8 @@
     "image/vnd.fastbidsheet"
   ],
   "fpx": [
-    "image/vnd.fpx"
+    "image/vnd.fpx",
+    "image/x-fpx"
   ],
   "fst": [
     "image/vnd.fst"
@@ -2992,7 +3002,9 @@
     "application/ics"
   ],
   "ifb": [
-    "text/calendar"
+    "text/calendar",
+    "text/x-vcalendar",
+    "application/ics"
   ],
   "css": [
     "text/css"
@@ -3744,6 +3756,12 @@
     "application/vnd.apache.parquet",
     "application/x-parquet"
   ],
+  "pcapng": [
+    "application/x-pcapng"
+  ],
+  "ntar": [
+    "application/x-pcapng"
+  ],
   "wp": [
     "application/vnd.wordperfect",
     "application/x-wordperfect",
@@ -3820,6 +3838,9 @@
   "ar": [
     "application/x-archive"
   ],
+  "lib": [
+    "application/x-archive"
+  ],
   "arj": [
     "application/x-arj"
   ],
@@ -3833,9 +3854,6 @@
     "application/x-awk"
   ],
   "blend": [
-    "application/x-blender"
-  ],
-  "BLEND": [
     "application/x-blender"
   ],
   "blender": [
@@ -4318,9 +4336,6 @@
     "application/vnd.microsoft.portable-executable"
   ],
   "sys": [
-    "application/vnd.microsoft.portable-executable"
-  ],
-  "lib": [
     "application/vnd.microsoft.portable-executable"
   ],
   "ps1": [
@@ -4960,9 +4975,6 @@
   "jpf": [
     "image/jpx"
   ],
-  "jxl": [
-    "image/jxl"
-  ],
   "ora": [
     "image/openraster"
   ],
@@ -5198,6 +5210,12 @@
   "pat": [
     "image/x-gimp-pat"
   ],
+  "cel": [
+    "image/x-kiss-cel"
+  ],
+  "kcf": [
+    "image/x-kiss-cel"
+  ],
   "glb": [
     "model/gltf-binary"
   ],
@@ -5209,6 +5227,11 @@
   ],
   "mtl": [
     "model/mtl"
+  ],
+  "icalendar": [
+    "text/calendar",
+    "text/x-vcalendar",
+    "application/ics"
   ],
   "vct": [
     "text/vcard",
@@ -5425,6 +5448,9 @@
   ],
   "not": [
     "text/x-mup"
+  ],
+  "nix": [
+    "text/x-nix"
   ],
   "m": [
     "text/x-objcsrc",
@@ -5756,7 +5782,13 @@
   "flatpakref": [
     "application/vnd.flatpak.ref"
   ],
+  "sqfs": [
+    "application/vnd.squashfs"
+  ],
   "sqsh": [
+    "application/vnd.squashfs"
+  ],
+  "squashfs": [
     "application/vnd.squashfs"
   ],
   "snap": [
@@ -5831,10 +5863,6 @@
   "dtsi": [
     "text/x-devicetree-source"
   ],
-  "avif": [
-    "image/avif",
-    "image/avif-sequence"
-  ],
   "avifs": [
     "image/avif",
     "image/avif-sequence"
@@ -5886,5 +5914,11 @@
   ],
   "tsx": [
     "application/x-tiled-tsx"
+  ],
+  "sct": [
+    "image/x-sct"
+  ],
+  "pxr": [
+    "image/x-pxr"
   ]
 }

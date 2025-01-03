@@ -1,6 +1,6 @@
 {
   "name": "mime-xdg",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "mimetypes, mimeheads and mimenotes from xdg/shared-mime-info",
   "keywords": [
     "mime",
@@ -51,15 +51,15 @@
   "scripts": {
     "data": "cd ./__data__ && node ./index.js",
     "data:watch": "cd ./__data__ && nodemon --inspect ./index.js --watch ./index.js",
-    "build": "npm run data && dester --ie -m",
-    "dev": "dester --ie -wm"
+    "build": "npm run data && dester -m",
+    "dev": "dester -wm"
   },
   "devDependencies": {
     "@types/sax": "1.2.6",
     "dester": "1.0.x",
-    "nodemon": "3.1.0",
+    "nodemon": "^3.1.1",
     "sax": "1.3.0",
-    "typescript": "^5.2.2",
+    "typescript": "5.7.2",
     "xdg--shared-mime-info": "git+https://gitlab.freedesktop.org/xdg/shared-mime-info.git"
   }
 }
